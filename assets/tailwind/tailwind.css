@@ -3,14 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  /* * {
-    transition: 500ms;
-    -webkit-transition: 500ms;
-    -moz-transition: 500ms;
-    -ms-transition: 500ms;
-    -o-transition: 500ms;
-} */
-
   html {
     scroll-behavior: smooth;
   }

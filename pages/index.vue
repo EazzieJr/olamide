@@ -1,5 +1,7 @@
 <template>
-  <Timer />
+  <div>
+    <Navigation />
+  </div>
 </template>
 
 <script>
