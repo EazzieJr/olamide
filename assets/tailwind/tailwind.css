@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* * {
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+} */
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white;
+  }
+
+  input,
+  textarea select,
+  button {
+    @apply outline-0 focus:outline-none;
+  }
+
+  button {
+    @apply font-semibold text-white;
+  }
+
+  h2 {
+    @apply text-white font-manrope text-[32px] md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-[64px] font-normal md:leading-relaxed lg:leading-[64px] xl:leading-[80px] 2xl:leading-[87px];
+  }
+
+  .constraint {
+    @apply container mx-auto px-4 lg:px-6 xl:px-16 2xl:px-32;
+  }
+}
+
+@layer utilities {
+  .inline-start {
+    @apply inline-flex items-center justify-start;
+  }
+
+  .inline-center {
+    @apply inline-flex items-center justify-center;
+  }
+
+  .inline-end {
+    @apply inline-flex items-center justify-end;
+  }
+
+  .inline-between {
+    @apply inline-flex items-center justify-between;
+  }
+
+  .inline-evenly {
+    @apply inline-flex items-center justify-evenly;
+  }
+
+  .start {
+    @apply flex items-center justify-start;
+  }
+
+  .start-start {
+    @apply flex items-start justify-start;
+  }
+
+  .center {
+    @apply flex items-center justify-center;
+  }
+
+  .end {
+    @apply flex items-center justify-end;
+  }
+
+  .between {
+    @apply flex items-center justify-between flex-row;
+  }
+
+  .evenly {
+    @apply flex items-center justify-evenly;
+  }
+
+  /* Cols */
+  .col-start {
+    @apply flex flex-col items-start justify-center;
+  }
+
+  .col-center {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .col-end {
+    @apply flex flex-col items-end justify-center;
+  }
+
+  .col-between {
+    @apply flex flex-col items-start justify-between;
+  }
+}
