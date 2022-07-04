@@ -1,5 +1,5 @@
 <template>
-  <Tutorial/>
+  <Timer />
 </template>
 
 <script>
