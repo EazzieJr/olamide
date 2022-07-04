@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         lato: ['Lato'],
+        haptik: ['Gt Haptik'],
       },
     },
   },
