@@ -49,7 +49,7 @@
   }
 
   h1 {
-    @apply text-[12.7vw] md:text-[13.5vw] xl:text-[14vw] uppercase text-center leading-relaxed;
+    @apply text-[12.7vw] md:text-[13.5vw] xl:text-[14vw] uppercase text-center leading-relaxed xl:leading-[18.7vw];
   }
 }
 
