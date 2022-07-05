@@ -1,5 +1,5 @@
 <template>
-  <section class="divide-y-[0.5px] divide-black dark:divide-white">
+  <section class="divide-y-[0.5px] divide-black dark:divide-white custom-border">
     <div>
       <h1>olamide adeyi</h1>
     </div>
@@ -28,7 +28,6 @@ export default {};
 }
 
 section {
-  @apply border-y-[0.5px] border-black dark:border-white;
   img {
     @apply w-[3.8vw];
   }

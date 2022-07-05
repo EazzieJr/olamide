@@ -114,4 +114,9 @@
   .col-between {
     @apply flex flex-col items-start justify-between;
   }
+
+  /* Custom border */
+  .custom-border {
+    @apply border-y-[0.5px] border-black dark:border-white;
+  }
 }

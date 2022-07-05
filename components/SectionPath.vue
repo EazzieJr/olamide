@@ -1,13 +1,13 @@
 <template>
-  <span>
-    /{{path}}
-  </span>
+  <div>
+    <span> /{{ path }} </span>
+  </div>
 </template>
 
 <script>
 export default {
-  props: ["path"]
-}
+  props: ["path"],
+};
 </script>
 
 <style lang="postcss" scoped>
