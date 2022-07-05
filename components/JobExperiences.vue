@@ -4,7 +4,10 @@
       <SectionPath path="JOB EXPERIENCE" />
 
       <div class="experiences">
-        <Experience />
+        <Experience at="ANTHONIA AND GRADE," year="2022"/>
+        <Experience at="CENTURY LEAP," year="2021 - 2022"/>
+        <Experience at="THEONEOZENYA," year="2021 - 2022"/>
+        <Experience at="TIMESCAPE MEDIA." year="2019"/>
       </div>
     </div>
   </section>
