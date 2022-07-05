@@ -30,7 +30,7 @@ export default {};
 section {
   @apply border-y-[0.5px] border-black dark:border-white;
   img {
-    @apply w-[3.7vw];
+    @apply w-[3.8vw];
   }
 }
 
