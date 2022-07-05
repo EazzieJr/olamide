@@ -3,6 +3,8 @@
     <Navigation />
 
     <Hero />
+
+    <Footer />
   </div>
 </template>
 
