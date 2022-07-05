@@ -50,7 +50,7 @@ export default {};
 
 <style lang="postcss" scoped>
 nav {
-  @apply p-6 lg:py-[2.7vw] lg:px-[1.6vw] text-xs lg:text-[0.935vw];
+  @apply py-6 lg:py-[2.7vw]  text-xs lg:text-[0.935vw];
   font-family: "GT Haptik";
 
   > .nav-container {

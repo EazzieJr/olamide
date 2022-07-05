@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="px-5 lg:px-[1.6vw]">
     <Navigation />
 
     <Hero />

@@ -1,6 +1,6 @@
 <template>
-  <section>
-AM
+  <section class="">
+
   </section>
 </template>
 
@@ -21,5 +21,6 @@ export default {
 
 section {
   font-family: 'MoglanDemo';
+  @apply border border-y border-black dark:border-white
 }
 </style>
