@@ -15,7 +15,7 @@ module.exports = {
         lato: ['Lato'],
         haptik: ['GT Haptik'],
         arial: ['Arial'],
-        moglan: ['Moglan'],
+        moglandemo: ['MoglanDemo'],
       },
     },
   },
