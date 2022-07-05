@@ -46,7 +46,7 @@ export default {
 
 <style lang="postcss" scoped>
 footer {
-  @apply pt-14 md:pt-[6.62vw] font-arial;
+  @apply pt-14 md:pt-[6.62vw] font-arial border-b-0;
   > .footer-container {
     @apply divide-y-[0.5px] divide-black dark:divide-white;
     > .top {
