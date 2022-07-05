@@ -4,6 +4,8 @@
 
     <Hero />
 
+    <JobExperiences />
+
     <Footer />
   </div>
 </template>

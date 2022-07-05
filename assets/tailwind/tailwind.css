@@ -51,6 +51,10 @@
   h1 {
     @apply text-[12.7vw] md:text-[13.5vw] xl:text-[14vw] uppercase text-center leading-relaxed xl:leading-[18.7vw];
   }
+
+  h3, .h3 {
+    @apply text-3xl md:text-[3.17vw] leading-normal md:leading-[4.4vw];
+  }
 }
 
 @layer utilities {

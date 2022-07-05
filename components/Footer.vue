@@ -6,11 +6,11 @@
 
         <div class="socials">
           <ul class="list">
-            <li><a href="/">BEHANCE,</a></li>
-            <li><a href="/">TWITTER,</a></li>
-            <li><a href="/">GMAIL,</a></li>
-            <li><a href="/">INSTAGRAM</a></li>
-            <li><a href="/">LINKEDIN</a></li>
+            <li class="h3"><a href="/">BEHANCE,</a></li>
+            <li class="h3"><a href="/">TWITTER,</a></li>
+            <li class="h3"><a href="/">GMAIL,</a></li>
+            <li class="h3"><a href="/">INSTAGRAM</a></li>
+            <li class="h3"><a href="/">LINKEDIN</a></li>
           </ul>
         </div>
         
@@ -54,10 +54,6 @@ footer {
 
       > .socials {
         @apply order-3 md:-order-none col-span-2;
-
-        ul {
-          @apply text-3xl md:text-[3.17vw] leading-normal md:leading-[4.4vw];
-        }
       }
 
       > .download-resume {
