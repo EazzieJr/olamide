@@ -13,9 +13,9 @@ module.exports = {
     extend: {
       fontFamily: {
         lato: ['Lato'],
-        haptik: ['Gt Haptik'],
+        haptik: ['GT Haptik'],
         arial: ['Arial'],
-        monglan: ['MonglanDemo'],
+        moglan: ['Moglan'],
       },
     },
   },

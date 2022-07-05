@@ -1,5 +1,5 @@
 <template>
-  <div id="time_span"></div>
+  <p class="" id="time_span"></p>
 </template>
 
 <script>

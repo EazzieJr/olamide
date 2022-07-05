@@ -1,23 +1,44 @@
 <template>
   <nav>
-    <div class="nav-container">
+    <div class="nav-container between">
       <div class="left-container hidden md:block">
-        <ul class="navlinks">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul class="navlinks start">
+          <li><a href="/">Be.</a></li>
+          <li><a href="/">Dr.</a></li>
+          <li><a href="/">In.</a></li>
+          <li><a href="/">Tw.</a></li>
         </ul>
       </div>
 
       <div class="mid-container">
-        <nuxt-link to="/"> </nuxt-link>
+        <nuxt-link to="/" class="font-haptik uppercase"> olamide </nuxt-link>
       </div>
 
-      <div class="right-container">
+      <div class="right-container start">
         <Timer />
 
-        <button class="theme"></button>
+        <button class="theme">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="9" cy="9" r="8.75" stroke="black" stroke-width="0.5" />
+            <mask id="path-2-inside-1_4_6" fill="white">
+              <path
+                d="M9 15C8.21207 15 7.43185 14.8448 6.7039 14.5433C5.97594 14.2417 5.31451 13.7998 4.75736 13.2426C4.20021 12.6855 3.75825 12.0241 3.45672 11.2961C3.15519 10.5681 3 9.78793 3 9C3 8.21207 3.15519 7.43185 3.45672 6.7039C3.75825 5.97594 4.20021 5.31451 4.75736 4.75736C5.31451 4.20021 5.97595 3.75825 6.7039 3.45672C7.43185 3.15519 8.21207 3 9 3L9 9L9 15Z"
+              />
+            </mask>
+            <path
+              d="M9 15C8.21207 15 7.43185 14.8448 6.7039 14.5433C5.97594 14.2417 5.31451 13.7998 4.75736 13.2426C4.20021 12.6855 3.75825 12.0241 3.45672 11.2961C3.15519 10.5681 3 9.78793 3 9C3 8.21207 3.15519 7.43185 3.45672 6.7039C3.75825 5.97594 4.20021 5.31451 4.75736 4.75736C5.31451 4.20021 5.97595 3.75825 6.7039 3.45672C7.43185 3.15519 8.21207 3 9 3L9 9L9 15Z"
+              fill="black"
+              stroke="black"
+              mask="url(#path-2-inside-1_4_6)"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </nav>
@@ -27,4 +48,37 @@
 export default {};
 </script>
 
-<style></style>
+<style lang="postcss" scoped>
+nav {
+  @apply p-6 lg:py-[2.7vw] lg:px-[1.6vw] text-xs lg:text-[0.935vw];
+  font-family: "GT Haptik";
+
+  > .nav-container {
+    @apply md:grid md:grid-cols-3;
+
+    > .left-container {
+      @apply hidden md:block;
+
+      ul {
+        @apply space-x-5 lg:space-x-[1.9vw];
+      }
+    }
+
+    > .mid-container {
+      @apply tracking-[10px] lg:tracking-[0.95vw] place-self-center;
+    }
+
+    > .right-container {
+      @apply space-x-3 place-self-end
+    }
+  }
+}
+
+@font-face {
+  font-family: "GT Haptik";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("~assets/fonts/GT-Haptik-Regular.woff2") format("woff2");
+}
+</style>
