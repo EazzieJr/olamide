@@ -13,6 +13,8 @@ module.exports = {
       fontFamily: {
         lato: ['Lato'],
         haptik: ['Gt Haptik'],
+        arial: ['Arial'],
+        monglan: ['MonglanDemo'],
       },
     },
   },
