@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="nav-container">
-      <div class="left-container">
+      <div class="left-container hidden md:block">
         <ul class="navlinks">
           <li></li>
           <li></li>
