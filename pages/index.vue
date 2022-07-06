@@ -4,6 +4,8 @@
 
     <Hero />
 
+    <RecentWorks />
+
     <JobExperiences />
 
     <Footer />
