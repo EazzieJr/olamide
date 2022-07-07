@@ -5,7 +5,7 @@
     </div>
 
     <div class="work-info">
-      <h3>United Bank of Africa Redesign Case study</h3>
+      <h3>{{ title }}</h3>
 
       <SeeCase />
     </div>
@@ -19,13 +19,14 @@ export default {
       type: Boolean,
       default: false,
     },
+    title: String
   },
 };
 </script>
 
 <style lang="postcss" scoped>
 .work {
-  @apply w-4/5 max-w-[300px] space-y-8 overflow-hidden;
+  @apply w-4/5 max-w-[300px] md:max-w-none md:w-[31.45vw] space-y-7 md:space-y-[2.64vw] overflow-hidden;
   > .image {
     @apply w-full;
 
@@ -35,7 +36,7 @@ export default {
   }
 
   > .work-info {
-    @apply space-y-2;
+    @apply space-y-2 md:space-y-[0.72vw];
   }
 }
 </style>
