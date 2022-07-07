@@ -4,6 +4,8 @@
 
     <Hero />
 
+    <Skillsets />
+
     <RecentWorks />
 
     <JobExperiences />
