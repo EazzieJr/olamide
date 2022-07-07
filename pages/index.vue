@@ -4,6 +4,8 @@
 
     <Hero />
 
+    <About />
+
     <Skillsets />
 
     <RecentWorks />
@@ -16,21 +18,16 @@
 
 <script>
 export default {
-  name: 'IndexPage'
-}
+  name: "IndexPage",
+};
 </script>
 
-
 <style>
-
-
-
-
 .hap {
-  font-family: 'GT Haptik Regular';
+  font-family: "GT Haptik Regular";
 }
 
 .mon {
-  font-family: 'Moglan';
+  font-family: "Moglan";
 }
 </style>
