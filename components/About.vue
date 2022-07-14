@@ -1,13 +1,21 @@
 <template>
   <section class="recent-works custom-border">
     <div class="recent-works-container">
-      <div class="top-left">
-        <SectionPath path="about" />
+      <SectionPath path="about" class="md:col-span-3" />
 
-        <ScrollDown /> 
-      </div>
+      <ScrollDown class="place-self-end md:self-start md:order-last" />
 
-      <div class="bottom-left grid grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-[12.5vw] md:col-span-3 md:-mt-[1vw] md:pr-[5vw]">
+      <div
+        class="bottom-mid order-3 md:order-none col-span-8 pr-16 md:p-0 -mt-32 md:m-0"
+      >
+        <p class="uppercase text-sm leading-loose md:text-[3.17vw] md:leading-[4.45vw] font-arial">
+          SELF-MOTIVATED DESIGNER WITH WILD INTEREST IN CREATING SEAMLESS
+          DIGITAL EXPERIENCES. <br />
+          <br />
+          Not only do I believe users' pain points can be addressed by a
+          thorough research and design, I also believe that it can put a smile
+          on the users face.
+        </p>
       </div>
     </div>
   </section>
@@ -19,9 +27,9 @@ export default {};
 
 <style lang="postcss" scoped>
 .recent-works {
-  @apply py-6 md:py-[6.62vw];
+  @apply pt-20 pb-6 md:py-[6.62vw];
   > .recent-works-container {
-    @apply grid grid-cols-1 md:grid-cols-4 gap-y-7;
+    @apply grid grid-cols-2 md:grid-cols-12 gap-y-7;
   }
 }
 </style>
