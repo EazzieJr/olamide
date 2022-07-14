@@ -17,7 +17,7 @@
       <div class="right-container start">
         <Timer />
 
-        <button class="theme">
+        <button class="theme" @click="toggleTheme">
           <svg
             width="18"
             height="18"
@@ -45,7 +45,28 @@
 </template>
 
 <script>
-export default {};
+import { mapState, mapMutations } from 'vuex'
+export default {
+  methods: {
+    ...mapMutations(["toggleDarkMode"]),
+
+    toggleTheme() {
+      const html = document.querySelector("html");
+
+      if (this.darkMode) {
+        html.classList.remove("dark");
+        this.toggleDarkMode()
+      } else {
+        html.classList.add("dark");
+        this.toggleDarkMode()
+      }
+    },
+  },
+
+  computed: {
+    ...mapState(["darkMode"])
+  }
+};
 </script>
 
 <style lang="postcss" scoped>
@@ -69,7 +90,7 @@ nav {
     }
 
     > .right-container {
-      @apply space-x-3 place-self-end
+      @apply space-x-3 place-self-end;
     }
   }
 }
