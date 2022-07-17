@@ -6,7 +6,7 @@
       <ScrollDown class="place-self-end md:self-start md:order-last" />
 
       <div class="bottom-mid">
-        <p class="about-text">
+        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" class="about-text md:hidden">
           SELF-MOTIVATED DESIGNER WITH WILD INTEREST IN CREATING SEAMLESS
           DIGITAL EXPERIENCES. <br />
           <br />
@@ -15,8 +15,21 @@
           on the users face.
         </p>
 
+        <div class="about-text hidden md:block">
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">SELF-MOTIVATED DESIGNER WITH WILD</p>
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">INTEREST IN CREATING SEAMLESS</p>
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">DIGITAL EXPERIENCES.<br /></p>
+          <br />
+
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Not only do I believe users' pain</p>
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">points can be addressed by a</p>
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">thorough research and design, I</p>
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">also believe that it can put a smile</p>
+          <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">on the users face.</p>
+        </div>
+
         <div class="achievements">
-          <div class="top between">
+          <div data-aos="fade-in" data-aos-duration="1500" class="top between">
             <span>2020 - 2022</span>
 
             <span class="">1 / 8</span>
@@ -53,7 +66,7 @@ export default {
     > .bottom-mid {
       @apply order-3 md:order-none col-span-8 pr-16 md:p-0 -mt-32 md:m-0;
 
-      p.about-text {
+      .about-text {
         @apply uppercase text-sm leading-loose md:text-[3.17vw] md:leading-[4.45vw] font-arial;
       }
 
