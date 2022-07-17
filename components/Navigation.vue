@@ -19,6 +19,7 @@
 
         <button class="theme" @click="toggleTheme">
           <svg
+          :class="darkMode ? 'invert' : ''"
             width="18"
             height="18"
             viewBox="0 0 18 18"

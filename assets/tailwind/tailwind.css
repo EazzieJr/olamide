@@ -123,4 +123,8 @@
   .custom-border {
     @apply border-y-[0.5px] border-black dark:border-white;
   }
+
+  .line {
+    @apply h-[0.5px] bg-black dark:bg-white origin-center w-0 place-self-center;
+  }
 }

@@ -1,5 +1,5 @@
 <template>
-  <section class="recent-works custom-border">
+  <section class="recent-works">
     <div class="recent-works-container">
       <SectionPath path="about" class="md:col-span-3" />
 
@@ -28,9 +28,9 @@
         </div>
 
         <div class="motif-texts mt-7 md:text-[1.59vw] md:mt-[3.50vw] font-arial space-y-16 md:space-y-[5.3vw]">
-          <p class="mr-10 md:m-0 md:leading-[2.5vw]">I am a certified product designer with over 2 <br class="hidden md:block"> years of experience in the design industry. I <br class="hidden md:block"> have designed projects and conducted research <br class="hidden md:block"> on user needs and pain points.</p>
-          <p class="ml-14 md:ml-[25vw] md:leading-[2.5vw]">and I've always channeled the research <br class="hidden md:block"> towards creating a user friendly product. I <br class="hidden md:block"> believe equity is achievable in design and <br class="hidden md:block"> that accessibility and inclusiveness is for <br class="hidden md:block"> the greater good of all users</p>
-          <p class="mr-16 md:mr-0 md:ml-[10vw] md:leading-[2.5vw]">My experience in the industry has <br class="hidden md:block"> made me understand how <br class="hidden md:block"> collaboration and teamwork can <br class="hidden md:block"> make a product a success.</p>
+          <p data-aos="fade-up" data-aos-duration="2000" class="mr-10 md:m-0 md:leading-[2.5vw]">I am a certified product designer with over 2 <br class="hidden md:block"> years of experience in the design industry. I <br class="hidden md:block"> have designed projects and conducted research <br class="hidden md:block"> on user needs and pain points.</p>
+          <p data-aos="fade-up" data-aos-duration="2000" class="ml-14 md:ml-[25vw] md:leading-[2.5vw]">and I've always channeled the research <br class="hidden md:block"> towards creating a user friendly product. I <br class="hidden md:block"> believe equity is achievable in design and <br class="hidden md:block"> that accessibility and inclusiveness is for <br class="hidden md:block"> the greater good of all users</p>
+          <p data-aos="fade-up" data-aos-duration="2000" class="mr-16 md:mr-0 md:ml-[10vw] md:leading-[2.5vw]">My experience in the industry has <br class="hidden md:block"> made me understand how <br class="hidden md:block"> collaboration and teamwork can <br class="hidden md:block"> make a product a success.</p>
         </div>
       </div>
     </div>
@@ -38,7 +38,10 @@
 </template>
 
 <script>
-export default {};
+import aosMixin from "~/mixins/aos";
+export default {
+  mixins: [aosMixin],
+};
 </script>
 
 <style lang="postcss" scoped>
