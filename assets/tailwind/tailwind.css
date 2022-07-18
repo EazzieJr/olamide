@@ -131,4 +131,8 @@
   .line {
     @apply h-[0.5px] bg-black dark:bg-white origin-center w-0 place-self-center;
   }
+
+  .section-divider, .recent-divider, .jobs-divider, .footer-divider{
+    @apply h-[0.5px] bg-black dark:bg-white origin-right w-0;
+  }
 }
