@@ -1,8 +1,8 @@
 <template>
   <div class="experience between font-arial">
-    <h3 class="at"> {{ at }} </h3>
+    <h3 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="at"> {{ at }} </h3>
 
-    <div class="year">{{ year }}</div>
+    <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" class="year">{{ year }}</div>
   </div>
 </template>
 

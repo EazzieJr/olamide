@@ -2,7 +2,7 @@
   <div class="space-y-5 md:space-y-[1.32vw] flex flex-col items-center jus">
     <span>
       <svg
-        class="md:w-[0.93vw] md:h-[6.95vw]"
+        class="md:w-[0.93vw] md:h-[6.95vw] dark:invert"
         width="10"
         height="104"
         viewBox="0 0 10 104"
@@ -18,7 +18,7 @@
 
     <span>
       <svg
-        class="w-8 md:w-[2.91vw]"
+        class="arrow w-8 md:w-[2.91vw] dark:invert"
         viewBox="0 0 44 59"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,20 @@
 </template>
 
 <script>
-export default {};
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+export default {
+  mounted() {
+    gsap.to(".arrow", {
+      yoyo: true,
+      repeat: -1,
+      duration: 1.5,
+      ease: "power1.inOut",
+      y: "2vw",
+    });
+  },
+};
 </script>
 
 <style></style>

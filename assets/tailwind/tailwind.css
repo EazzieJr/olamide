@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply transition-colors duration-100;
+  }
+  
   html {
     scroll-behavior: smooth;
   }

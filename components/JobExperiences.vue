@@ -12,7 +12,7 @@
         </div>
 
         <div class="image">
-          <img class="w-full" src="svg/e-card.svg" alt="Job Experiences" />
+          <img data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="w-full" src="svg/e-card.svg" alt="Job Experiences" />
         </div>
       </div>
     </div>

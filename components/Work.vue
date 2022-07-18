@@ -30,7 +30,7 @@ export default {
 .work {
   @apply w-4/5 max-w-[300px] md:max-w-none md:w-[31.45vw] space-y-7 md:space-y-[2.64vw] overflow-hidden;
   > .image {
-    @apply w-full md:w-[31.45vw] md:h-[49.5vw];
+    @apply w-full md:w-[31.45vw] md:h-[44.5vw];
 
     &.small {
       @apply h-64 md:h-[30.1vw]
