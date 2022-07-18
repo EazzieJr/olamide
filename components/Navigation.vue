@@ -2,19 +2,50 @@
   <nav>
     <div class="nav-container between">
       <div class="left-container hidden md:block">
-        <ul class="navlinks start">
-          <li><a href="/">Be.</a></li>
-          <li><a href="/">Dr.</a></li>
-          <li><a href="/">In.</a></li>
-          <li><a href="/">Tw.</a></li>
+        <ul class="navlinks start ">
+          <a data-cursor="-pointer -exclusion" data-magnetic>
+            <div class="overflow-hidden lg:space-y-[1vw] h-4 lg:h-[1.1vw]">
+              <div class="swap">
+                <li>Be.</li>
+                <li>Be.</li>
+              </div>
+            </div>
+          </a>
+
+          <a data-cursor="-pointer -exclusion" data-magnetic>
+            <div class="overflow-hidden lg:space-y-[1vw] h-4 lg:h-[1.1vw]">
+              <div class="swap">
+                <li>Dr.</li>
+                <li>Dr.</li>
+              </div>
+            </div>
+          </a>
+
+          <a data-cursor="-pointer -exclusion" data-magnetic>
+            <div class="overflow-hidden lg:space-y-[1vw] h-4 lg:h-[1.1vw]">
+              <div class="swap">
+                <li>In.</li>
+                <li>In.</li>
+              </div>
+            </div>
+          </a>
+
+          <a data-cursor="-pointer -exclusion" data-magnetic>
+            <div class="overflow-hidden lg:space-y-[1vw] h-4 lg:h-[1.1vw]">
+              <div class="swap">
+                <li>Tw.</li>
+                <li>Tw.</li>
+              </div>
+            </div>
+          </a>
         </ul>
       </div>
 
       <div class="mid-container">
-        <nuxt-link to="/" class="font-haptik uppercase"> olamide </nuxt-link>
+        <nuxt-link to="/" class="font-haptik uppercase" data-cursor="-exclusion"> olamide </nuxt-link>
       </div>
 
-      <div class="right-container start">
+      <div class="right-container start" data-cursor="-pointer -exclusion">
         <Timer />
 
         <button class="theme" @click="toggleTheme">
@@ -46,6 +77,8 @@
 </template>
 
 <script>
+import $ from "jquery";
+import Magnetic from "~/js/magnetic.js";
 import { mapState, mapMutations } from 'vuex'
 export default {
   methods: {
@@ -66,6 +99,13 @@ export default {
 
   computed: {
     ...mapState(["darkMode"])
+  },
+
+  mounted() {
+    new Magnetic();
+    $("[data-magnetic]").each(function () {
+      new Magnetic(this);
+    });
   }
 };
 </script>
@@ -102,5 +142,34 @@ nav {
   font-weight: 400;
   font-display: swap;
   src: url("~assets/fonts/GT-Haptik-Regular.woff2") format("woff2");
+}
+
+ul a {
+  position: relative;
+}
+
+ul a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -1vw;
+  left: -1vw;
+  right: -1vw;
+  bottom: -1vw;
+  z-index: -1;
+  /* width: 100%;
+  height: 100%; */
+  /* background: red; */
+  /* transform: translate(-50%, -50%); */
+  /* opacity: 0; */
+  /* transition: opacity 0.2s ease-in-out; */
+}
+
+ul a > div > div  {
+  @apply transition duration-300;
+}
+
+ul a:hover > div > div {
+  @apply -translate-y-[1vw] transition duration-300 ease-linear
 }
 </style>

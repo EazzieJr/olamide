@@ -17,8 +17,19 @@
 </template>
 
 <script>
+import MouseFollower from "mouse-follower";
+import gsap from "gsap";
+MouseFollower.registerGSAP(gsap);
+
 export default {
   name: "IndexPage",
+
+  mounted() {
+    const cursor = new MouseFollower({
+      skewing: 3,
+      stickDelta: 1
+    });
+  },
 };
 </script>
 

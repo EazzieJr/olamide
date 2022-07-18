@@ -1,5 +1,5 @@
 <template>
-  <section class="grid grid-cols-1">
+  <section class="grid grid-cols-1" data-cursor="-exclusion -big">
     <div class="line"></div>
     <h1 class="perse">olamide adeyi</h1>
     <div class="line"></div>
@@ -8,7 +8,7 @@
 
       <h1>work folio</h1>
 
-      <img src="svg/asterisk.svg" alt="" />
+      <img src="svg/asterisk.svg" alt=""/>
     </div>
     <div class="line"></div>
   </section>
