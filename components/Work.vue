@@ -1,18 +1,20 @@
 <template>
   <div class="work block">
-    <div class="image">
-      <img :src="small ? 'svg/small-work.svg' : 'svg/big-work.svg'" alt="" />
+    <div class="image overflow-hidden" :class="{small}">
+      <img src="svg/big-work.svg" alt="" />
     </div>
 
     <div class="work-info">
-      <h3>{{ title }}</h3>
+      <h3 data-aos="fade-up" data-aos-duration="2000">{{ title }}</h3>
 
-      <SeeCase />
+      <SeeCase data-aos="fade-in" data-aos-duration="2000" data-aos-delay="400" />
     </div>
   </div>
 </template>
 
 <script>
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 export default {
   props: {
     small: {
@@ -28,7 +30,11 @@ export default {
 .work {
   @apply w-4/5 max-w-[300px] md:max-w-none md:w-[31.45vw] space-y-7 md:space-y-[2.64vw] overflow-hidden;
   > .image {
-    @apply w-full;
+    @apply w-full md:w-[31.45vw] md:h-[49.5vw];
+
+    &.small {
+      @apply h-64 md:h-[30.1vw]
+    }
 
     img {
       @apply w-full;

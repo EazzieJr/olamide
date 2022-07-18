@@ -6,25 +6,25 @@
       </div>
 
       <div class="bottom-left md:col-span-3 grid col-span-1">
-        <span class="ml-[6vw]"> Communication </span>
+        <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="ml-[6vw]"> Communication </p>
 
-        <span class="place-self-end mr-[10vw] md:mr-[10.6vw] mt-5 md:mt-[2vw]"> Teamplayer </span>
+        <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="place-self-end mr-[10vw] md:mr-[10.6vw] mt-5 md:mt-[2vw]"> Teamplayer </p>
 
-        <span class="ml-[10vw] md:ml-[20vw] mt-4 md:mt-[1.25vw]"> Empathy </span>
+        <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="ml-[10vw] md:ml-[20vw] mt-4 md:mt-[1.25vw]"> Empathy </p>
 
-        <span class="place-self-end mr-[14vw] md:mr-[17vw] mt-7 md:mt-[5.1vw]"> Creative </span>
+        <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="place-self-end mr-[14vw] md:mr-[17vw] mt-7 md:mt-[5.1vw]"> Creative </p>
 
-        <span class="mt-5 md:mt-[1.13vw]"> Critical thinker </span>
+        <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="mt-5 md:mt-[1.13vw]"> Critical thinker </p>
 
-        <span class="place-self-center mt-6 md:mt-[9.47vw] md:-ml-[15vw]"> Figma </span>
+        <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="place-self-center mt-6 md:mt-[9.47vw] md:-ml-[15vw]"> Figma </p>
 
-        <span class="ml-[40vw] mt-6 md:ml-0 md:mt-[9.47vw] md:place-self-center"> Adobe XD </span>
+        <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="ml-[40vw] mt-6 md:ml-0 md:mt-[9.47vw] md:place-self-center"> Adobe XD </p>
 
-        <span class="mt-7 md:ml-[3vw] md:mt-[8.87vw]"> Adobe Illustrator </span>
+        <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="mt-7 md:ml-[3vw] md:mt-[8.87vw]"> Adobe Illustrator </p>
 
-        <span class="place-self-end mt-7 md:mt-[7.5vw] md:mr-[10.6vw]"> Adobe Premier Pro </span>
+        <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="place-self-end mt-7 md:mt-[7.5vw] md:mr-[10.6vw]"> Adobe Premier Pro </p>
 
-        <span class="place-self-center mt-7 md:mt-[8.87vw] md:-ml-[5vw]"> Trello </span>
+        <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="place-self-center mt-7 md:mt-[8.87vw] md:-ml-[5vw]"> Trello </p>
       </div>
     </div>
   </section>
@@ -42,7 +42,7 @@ export default {};
   }
 }
 
-span {
+p {
   @apply block text-3xl md:text-[4.25vw] font-moglandemo w-fit md:leading-[5.7vw]
 }
 </style>

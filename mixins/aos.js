@@ -3,7 +3,7 @@ import 'aos/dist/aos.css'
 
 export default {
     mounted() {
-        AOS.init({ })
+        AOS.init({})
         // setInterval(() => {
         //     AOS.refresh()
         // }, 5000);

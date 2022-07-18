@@ -6,15 +6,15 @@
 
         <div class="socials">
           <ul class="list">
-            <li class="h3"><a href="/">BEHANCE,</a></li>
-            <li class="h3"><a href="/">TWITTER,</a></li>
-            <li class="h3"><a href="/">GMAIL,</a></li>
-            <li class="h3"><a href="/">INSTAGRAM</a></li>
-            <li class="h3"><a href="/">LINKEDIN</a></li>
+            <li data-aos="fade-up" data-aos-duration="2000" class="h3"><a href="/">BEHANCE,</a></li>
+            <li data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="h3"><a href="/">TWITTER,</a></li>
+            <li data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="h3"><a href="/">GMAIL,</a></li>
+            <li data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="h3"><a href="/">INSTAGRAM</a></li>
+            <li data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" class="h3"><a href="/">LINKEDIN</a></li>
           </ul>
         </div>
         
-        <div class="download-resume">
+        <div data-aos="fade-in" data-aos-delay="500" class="download-resume">
           <a href="/">
             download resume.
           </a>
