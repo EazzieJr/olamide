@@ -8,12 +8,11 @@
         <SectionPath path="skillsets" />
       </div>
 
-      <div class="bottom-left md:col-span-3 grid col-span-1">
+      <div class="bottom-left md:col-span-3 grid col-span-1 text-center">
         <p
           data-aos="fade-up"
           data-aos-duration="2000"
           data-aos-delay="100"
-          class="ml-[6vw]"
         >
           Communication
         </p>
@@ -22,7 +21,6 @@
           data-aos="fade-up"
           data-aos-duration="2000"
           data-aos-delay="100"
-          class="place-self-end mr-[10vw] md:mr-[10.6vw] mt-5 md:mt-[2vw]"
         >
           Teamplayer
         </p>
@@ -31,7 +29,6 @@
           data-aos="fade-up"
           data-aos-duration="2000"
           data-aos-delay="100"
-          class="ml-[10vw] md:ml-[20vw] mt-4 md:mt-[1.25vw]"
         >
           Empathy
         </p>
@@ -40,7 +37,6 @@
           data-aos="fade-up"
           data-aos-duration="2000"
           data-aos-delay="100"
-          class="place-self-end mr-[14vw] md:mr-[17vw] mt-7 md:mt-[5.1vw]"
         >
           Creative
         </p>
@@ -49,7 +45,6 @@
           data-aos="fade-up"
           data-aos-duration="2000"
           data-aos-delay="100"
-          class="mt-5 md:mt-[1.13vw]"
         >
           Critical thinker
         </p>
@@ -58,7 +53,6 @@
           data-aos="fade-up"
           data-aos-duration="2000"
           data-aos-delay="100"
-          class="place-self-center mt-6 md:mt-[9.47vw] md:-ml-[15vw]"
         >
           Figma
         </p>
@@ -67,7 +61,6 @@
           data-aos="fade-up"
           data-aos-duration="2000"
           data-aos-delay="100"
-          class="ml-[40vw] mt-6 md:ml-0 md:mt-[9.47vw] md:place-self-center"
         >
           Adobe XD
         </p>
@@ -76,7 +69,6 @@
           data-aos="fade-up"
           data-aos-duration="2000"
           data-aos-delay="100"
-          class="mt-7 md:ml-[3vw] md:mt-[8.87vw]"
         >
           Adobe Illustrator
         </p>
@@ -85,7 +77,6 @@
           data-aos="fade-up"
           data-aos-duration="2000"
           data-aos-delay="100"
-          class="place-self-end mt-7 md:mt-[7.5vw] md:mr-[10.6vw]"
         >
           Adobe Premier Pro
         </p>
@@ -94,7 +85,6 @@
           data-aos="fade-up"
           data-aos-duration="2000"
           data-aos-delay="100"
-          class="place-self-center mt-7 md:mt-[8.87vw] md:-ml-[5vw]"
         >
           Trello
         </p>
