@@ -1,5 +1,5 @@
 <template>
-  <section class="skillsets">
+  <section class="skillsets overflow-hidden">
     <div class="grid">
       <div class="section-divider place-self-end"></div>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="overflow-hidden">
     <div class="grid">
       <div class="jobs-divider place-self-end"></div>
     </div>

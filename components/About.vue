@@ -1,5 +1,5 @@
 <template>
-  <section class="recent-works">
+  <section class="recent-works overflow-hidden">
     <div class="recent-works-container">
       <SectionPath path="about" class="md:col-span-3" />
 

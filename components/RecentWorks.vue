@@ -1,5 +1,5 @@
 <template>
-  <section class="recent-works">
+  <section class="recent-work overflow-hidden">
     <div class="grid">
       <div class="recent-divider place-self-start"></div>
     </div>
