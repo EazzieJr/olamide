@@ -8,46 +8,48 @@
         <SectionPath path="contact me" />
 
         <div class="socials">
-          <ul class="list" data-cursor="-exclusion">
-            <li data-aos="fade-up" data-aos-duration="2000" class="h3">
-              <a href="/">BEHANCE,</a>
+          <ul class="list uppercase" data-cursor="-exclusion">
+            <li class="h3 behance">
+              <a href="/">
+                <span>b</span><span>e</span><span>h</span><span>a</span
+                ><span>n</span><span>c</span><span>e</span><span>,</span>
+              </a>
             </li>
-            <li
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-delay="100"
-              class="h3"
-            >
-              <a href="/">TWITTER,</a>
+            <li class="h3 twitter">
+              <a href="/">
+                <span>t</span><span>w</span><span>i</span><span>t</span
+                ><span>t</span><span>e</span><span>r</span><span>,</span>
+              </a>
             </li>
-            <li
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-delay="100"
-              class="h3"
-            >
-              <a href="/">GMAIL,</a>
+            <li class="h3 gmail">
+              <a href="/">
+                <span>g</span><span>m</span><span>a</span><span>i</span
+                ><span>l</span><span>,</span>
+              </a>
             </li>
-            <li
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-delay="100"
-              class="h3"
-            >
-              <a href="/">INSTAGRAM</a>
+            <li class="h3 instagram">
+              <a href="/">
+                <span>i</span><span>n</span><span>s</span><span>t</span
+                ><span>a</span><span>g</span><span>r</span><span>a</span
+                ><span>m</span><span>,</span>
+              </a>
             </li>
-            <li
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-delay="100"
-              class="h3"
-            >
-              <a href="/">LINKEDIN</a>
+            <li class="h3 linkedin">
+              <a href="/">
+                <span>l</span><span>i</span><span>n</span><span>k</span
+                ><span>e</span><span>d</span><span>i</span><span>n</span
+                ><span>.</span>
+              </a>
             </li>
           </ul>
         </div>
 
-        <div data-aos="fade-in" data-aos-delay="500" class="download-resume" data-cursor="-exclusion">
+        <div
+          data-aos="fade-in"
+          data-aos-delay="500"
+          class="download-resume"
+          data-cursor="-exclusion"
+        >
           <a href="/resume.pdf" download> download resume. </a>
         </div>
       </div>
@@ -72,17 +74,59 @@ export default {
     },
   },
 
-  mounted() {
-    gsap.to(".footer-divider", {
-      scrollTrigger: {
-        trigger: ".footer-divider",
-        start: "top 90%",
-      },
+  methods: {
+    initFooterAnimation() {
+      gsap.to(".footer-divider", {
+        scrollTrigger: {
+          trigger: ".footer-divider",
+          start: "top 90%",
+        },
 
-      width: "100%",
-      duration: 2,
-      ease: "power3.out",
-    });
+        width: "100%",
+        duration: 2,
+        ease: "power3.out",
+      });
+
+      this.initLinkAnime(".behance a span");
+      this.initLinkAnime(".twitter a span");
+      this.initLinkAnime(".gmail a span");
+      this.initLinkAnime(".instagram a span");
+      this.initLinkAnime(".linkedin a span");
+    },
+
+    initLinkAnime(el) {
+      gsap.to(el, {
+        scrollTrigger: {
+          trigger: ".list",
+          start: "top 90%",
+          // toggleActions: "play none none reset",
+        },
+
+        duration: 1.5,
+        y: 0,
+        ease: "power3.out",
+        stagger: 0.02,
+      });
+    },
+  },
+
+  mounted() {
+    this.initFooterAnimation();
+    // gsap.to(
+    //   ".behance a span, .twitter a span, .gmail a span, .instagram a span, .linkedin a span",
+    //   {
+    //     scrollTrigger: {
+    //       trigger: ".list",
+    //       start: "top 90%",
+    //       toggleActions: "play none none reset",
+    //     },
+
+    //     duration: 1,
+    //     y: 0,
+    //     ease: "power3.out",
+    //     stagger: 0.02,
+    //   }
+    // );
   },
 };
 </script>
@@ -112,5 +156,18 @@ footer {
       }
     }
   }
+}
+
+span,
+a {
+  @apply inline-block;
+}
+
+a {
+  @apply overflow-hidden;
+}
+
+a span {
+  @apply md:translate-y-[5vw];
 }
 </style>

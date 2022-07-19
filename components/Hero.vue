@@ -24,7 +24,7 @@ export default {
     const tl = gsap.timeline();
     tl.to(".perse", {
       rotateX: 0,
-      duration: 2.5,
+      duration: 2,
       ease: "power3.out",
       delay: 2,
       opacity: 1,
