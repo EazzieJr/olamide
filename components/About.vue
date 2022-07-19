@@ -6,7 +6,7 @@
       <ScrollDown class="place-self-end md:self-start md:order-last" />
 
       <div class="bottom-mid">
-        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" class="about-text md:hidden">
+        <p class="about-text small opacity-0 translate-y-10 md:hidden">
           SELF-MOTIVATED DESIGNER WITH WILD INTEREST IN CREATING SEAMLESS
           DIGITAL EXPERIENCES. <br />
           <br />
@@ -51,9 +51,19 @@
 </template>
 
 <script>
+import { gsap } from 'gsap/dist/gsap';
 import aosMixin from "~/mixins/aos";
 export default {
   mixins: [aosMixin],
+
+  mounted() {
+    gsap.to(".small", {
+      opacity: 1,
+      y: 0,
+      duration: 2,
+      delay: 3
+    })
+  }
 };
 </script>
 
