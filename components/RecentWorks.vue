@@ -11,7 +11,7 @@
       <div
         class="bottom-left grid grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-[12.5vw] md:col-span-3 md:-mt-[1vw] md:pr-[5vw]"
       >
-        <Work title="Payme" src="images/Pay-me.png" />
+        <Work title="Payme" href="146964529/Payme-Fintech-App" src="images/Pay-me.png" />
         <Work
           title="LearnHere"
           :src="darkMode ? 'images/Learn-here-dark.png' : 'images/Learn-here-light.png'"
@@ -21,8 +21,9 @@
           title="United Bank of Africa Redesign Case study"
           small
           class="md:-mt-[20vw]"
+          href="145510379/LearnHere"
         />
-        <Work title="Msoft Design Agency" class="place-self-end" src="images/Msoft.png" />
+        <Work title="Msoft Design Agency" href="145509807/Design-agency-Website" class="place-self-end" src="images/Msoft.png" />
       </div>
     </div>
   </section>

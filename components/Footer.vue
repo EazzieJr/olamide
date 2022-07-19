@@ -8,7 +8,7 @@
         <SectionPath path="contact me" />
 
         <div class="socials">
-          <ul class="list">
+          <ul class="list" data-cursor="-exclusion">
             <li data-aos="fade-up" data-aos-duration="2000" class="h3">
               <a href="/">BEHANCE,</a>
             </li>
@@ -47,8 +47,8 @@
           </ul>
         </div>
 
-        <div data-aos="fade-in" data-aos-delay="500" class="download-resume">
-          <a href="/"> download resume. </a>
+        <div data-aos="fade-in" data-aos-delay="500" class="download-resume" data-cursor="-exclusion">
+          <a href="/resume.pdf" download> download resume. </a>
         </div>
       </div>
 

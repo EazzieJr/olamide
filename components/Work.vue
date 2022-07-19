@@ -1,15 +1,21 @@
 <template>
-  <div class="work block">
-    <div class="image overflow-hidden" :class="{small}">
-      <img :src="src" alt="" />
-    </div>
+  <a :href="`https://www.behance.net/gallery/${href}`" data-cursor="-pointer -exclusion">
+    <div class="work block">
+      <div class="image overflow-hidden" :class="{ small }">
+        <img :src="src" alt="" />
+      </div>
 
-    <div class="work-info">
-      <h3 data-aos="fade-up" data-aos-duration="2000">{{ title }}</h3>
+      <div class="work-info">
+        <h3 data-aos="fade-up" data-aos-duration="2000">{{ title }}</h3>
 
-      <SeeCase data-aos="fade-in" data-aos-duration="2000" data-aos-delay="400" />
+        <SeeCase
+          data-aos="fade-in"
+          data-aos-duration="2000"
+          data-aos-delay="400"
+        />
+      </div>
     </div>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -23,6 +29,7 @@ export default {
     },
     title: String,
     src: String,
+    href: String,
   },
 };
 </script>
@@ -34,7 +41,7 @@ export default {
     @apply w-full md:w-[31.45vw] md:h-[44.5vw];
 
     &.small {
-      @apply h-64 md:h-[30.1vw]
+      @apply h-64 md:h-[30.1vw];
     }
 
     img {
