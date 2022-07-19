@@ -1,7 +1,7 @@
 <template>
   <div class="work block">
     <div class="image overflow-hidden" :class="{small}">
-      <img src="svg/big-work.svg" alt="" />
+      <img :src="src" alt="" />
     </div>
 
     <div class="work-info">
@@ -21,7 +21,8 @@ export default {
       type: Boolean,
       default: false,
     },
-    title: String
+    title: String,
+    src: String,
   },
 };
 </script>

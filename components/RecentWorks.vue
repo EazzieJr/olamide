@@ -11,17 +11,18 @@
       <div
         class="bottom-left grid grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-[12.5vw] md:col-span-3 md:-mt-[1vw] md:pr-[5vw]"
       >
-        <Work title="United Bank of Africa Redesign Case study" />
+        <Work title="Payme" src="images/Pay-me.png" />
         <Work
-          title="Digilearn: Defining a new way to learning"
+          title="LearnHere"
+          :src="darkMode ? 'images/Learn-here-dark.png' : 'images/Learn-here-light.png'"
           class="place-self-end md:mt-[20vw]"
         />
         <Work
-          title="Viva Cinema mobile app case study"
+          title="United Bank of Africa Redesign Case study"
           small
           class="md:-mt-[20vw]"
         />
-        <Work title="InSafe Inevestment Application" class="place-self-end" />
+        <Work title="Msoft Design Agency" class="place-self-end" src="images/Msoft.png" />
       </div>
     </div>
   </section>
@@ -30,8 +31,13 @@
 <script>
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { mapState } from "vuex";
 gsap.registerPlugin(ScrollTrigger);
 export default {
+  computed: {
+    ...mapState(["darkMode"]),
+  },
+
   mounted() {
     gsap.to(".recent-divider", {
       scrollTrigger: {
