@@ -1,5 +1,5 @@
 <template>
-  <a :href="`https://www.behance.net/gallery/${href}`" data-cursor="-pointer -exclusion">
+  <div  data-cursor="-pointer -exclusion">
     <div class="work block">
       <div class="image overflow-hidden" :class="{ small }">
         <img :src="src" alt="" />
@@ -15,7 +15,7 @@
         />
       </div>
     </div>
-  </a>
+  </div>
 </template>
 
 <script>
