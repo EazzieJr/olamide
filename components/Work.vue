@@ -1,8 +1,8 @@
 <template>
-  <div  data-cursor="-pointer -exclusion">
-    <div class="work block">
-      <div class="image overflow-hidden" :class="{ small }">
-        <img :src="src" alt="" />
+  <div class="cont" data-cursor="-pointer -exclusion">
+    <div class="work block" :class="{ small }">
+      <div class="image" :class="`image-${id} overflow-hidden`">
+        <img :class="`img-${id}`" :src="src" alt="" />
       </div>
 
       <div class="work-info">
@@ -21,6 +21,7 @@
 <script>
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 export default {
   props: {
     small: {
@@ -30,6 +31,49 @@ export default {
     title: String,
     src: String,
     href: String,
+    id: String,
+  },
+
+  mounted() {
+    const stuff = document.querySelector(`.image-${this.id}`);
+
+      stuff.addEventListener("mouseover", () => {
+        gsap.to(`.image-${this.id} img`, {
+          scale: 1,
+          duration: 0.5,
+          // opacity: 0,
+          ease: "power3.out",
+        });
+
+        console.log("mouseover");
+      });
+
+      stuff.addEventListener("mouseleave", () => {
+        gsap.to(`.image-${this.id} img`, {
+          scale: 1.1,
+          duration: 0.5,
+          // opacity: 0,
+          ease: "power3.out",
+        });
+      });
+
+    gsap.fromTo(
+      `.img-${this.id}`,
+      {
+        y: "-10vw",
+      },
+      {
+        scrollTrigger: {
+          trigger: `.image-${this.id}`,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+          // markers: true
+        },
+        y: "10vw",
+        ease: "none",
+      }
+    );
   },
 };
 </script>
@@ -37,15 +81,23 @@ export default {
 <style lang="postcss" scoped>
 .work {
   @apply w-4/5 max-w-[300px] md:max-w-none md:w-[31.45vw] space-y-7 md:space-y-[2.64vw] overflow-hidden;
+
+  &.small .image {
+    @apply h-64 md:h-[30.1vw];
+  }
   > .image {
     @apply w-full md:w-[31.45vw] md:h-[44.5vw];
 
-    &.small {
-      @apply h-64 md:h-[30.1vw];
+    &:hover {
+      > img {
+        @apply transform scale-[1];
+        transition-duration: transform 500ms !important;
+      }
     }
 
     img {
-      @apply w-full;
+      @apply w-full md:scale-[1.1];
+      /* transition-duration: transform 500ms !important; */
     }
   }
 
@@ -53,4 +105,10 @@ export default {
     @apply space-y-2 md:space-y-[0.72vw];
   }
 }
+
+/* .image:hover img {
+  transform: scale(1) !important;
+  transition: 500ms;
+  transition-duration: transform 500ms !important;
+} */
 </style>
