@@ -1,5 +1,5 @@
 <template>
-  <div class="cont" data-cursor="-pointer -exclusion">
+  <div class="cont h-fit" data-cursor="-pointer -exclusion">
     <div class="work block" :class="{ small }">
       <div class="image" :class="`image-${id} overflow-hidden`">
         <img :class="`img-${id}`" :src="src" alt="" />
@@ -40,9 +40,9 @@ export default {
       stuff.addEventListener("mouseover", () => {
         gsap.to(`.image-${this.id} img`, {
           scale: 1,
-          duration: 0.5,
+          duration: 1,
           // opacity: 0,
-          ease: "power3.out",
+          ease: "power3.inOut",
         });
 
         console.log("mouseover");
@@ -51,9 +51,9 @@ export default {
       stuff.addEventListener("mouseleave", () => {
         gsap.to(`.image-${this.id} img`, {
           scale: 1.1,
-          duration: 0.5,
+          duration: 1,
           // opacity: 0,
-          ease: "power3.out",
+          ease: "power3.inOut",
         });
       });
 

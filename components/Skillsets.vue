@@ -8,86 +8,26 @@
         <SectionPath path="skillsets" />
       </div>
 
-      <div class="bottom-left md:col-span-3 grid col-span-1 text-center">
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="100"
-        >
-          Communication
-        </p>
+      <div class="bottom-left md:col-span-3 col-span-1 text-center md:pr-[7vw]">
+        <p class="overflow-hidden"> <span class="translate-y-[70px] md:translate-y-[8vw] block opacity-50">Communication</span></p>
 
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="100"
-        >
-          Teamplayer
-        </p>
+        <p class="overflow-hidden"> <span class="translate-y-[70px] md:translate-y-[8vw] block opacity-50">Teamplayer</span></p>
 
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="100"
-        >
-          Empathy
-        </p>
+        <p class="overflow-hidden"> <span class="translate-y-[70px] md:translate-y-[8vw] block opacity-50">Empathy</span></p>
 
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="100"
-        >
-          Creative
-        </p>
+        <p class="overflow-hidden"> <span class="translate-y-[70px] md:translate-y-[8vw] block opacity-50">Creative</span></p>
 
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="100"
-        >
-          Critical thinker
-        </p>
+        <p class="overflow-hidden"> <span class="translate-y-[70px] md:translate-y-[8vw] block opacity-50">Critical thinker</span> </p>
 
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="100"
-        >
-          Figma
-        </p>
+        <p class="overflow-hidden"> <span class="translate-y-[70px] md:translate-y-[8vw] block opacity-50">Figma</span></p>
 
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="100"
-        >
-          Adobe XD
-        </p>
+        <p class="overflow-hidden"> <span class="translate-y-[70px] md:translate-y-[8vw] block opacity-50">Adobe XD</span> </p>
 
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="100"
-        >
-          Adobe Illustrator
-        </p>
+        <p class="overflow-hidden"> <span class="translate-y-[70px] md:translate-y-[8vw] block opacity-50">Adobe Illustrator</span> </p>
 
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="100"
-        >
-          Adobe Premier Pro
-        </p>
+        <p class="overflow-hidden"> <span class="translate-y-[70px] md:translate-y-[8vw] block opacity-50">Adobe Premier Pro</span> </p>
 
-        <p
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="100"
-        >
-          Trello
-        </p>
+        <p class="overflow-hidden"> <span class="translate-y-[70px] md:translate-y-[8vw] block opacity-50">Trello</span></p>
       </div>
     </div>
   </section>
@@ -109,6 +49,23 @@ export default {
       duration: 2,
       ease: "power3.out",
     });
+
+    const p = document.querySelectorAll(".bottom-left p span");
+
+    p.forEach((el) => {
+      gsap.to(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: "top 90%",
+          // markers: true
+        },
+
+        y: 0,
+        opacity: 1,
+        duration: 2,
+        ease: "power3.out",
+      });
+    });
   },
 };
 </script>
@@ -121,6 +78,6 @@ export default {
 }
 
 p {
-  @apply block text-3xl md:text-[4.25vw] font-moglandemo w-fit md:leading-[5.7vw];
+  @apply block text-5xl md:text-[6.35vw] font-moglandemo leading-normal md:leading-[8.47vw];
 }
 </style>
