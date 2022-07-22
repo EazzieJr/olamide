@@ -113,15 +113,33 @@
             <span class="">1 / 8</span>
           </div>
 
-          <div class="bottom mt-4 md:mt-[1.6vw]">
-            <img class="w-full" src="svg/big-card.svg" alt="" />
+          <div class="bottom mt-4 md:mt-[1.6vw] w-full between">
+            <div class="w-[49.9%] overflow-hidden clip">
+              <img
+                class="w-full scale-[1.5]"
+                src="images/Olamide-facing-down.png"
+                alt=""
+              />
+            </div>
+
+            <div class="w-[49.9%] overflow-hidden clip">
+              <img
+                class="w-full scale-[1.5]"
+                src="images/Olamide-looking-forward.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
 
         <div
           class="motif-texts mt-7 md:text-[1.59vw] md:mt-[3.50vw] font-arial space-y-16 md:space-y-[5.3vw]"
         >
-          <p class="mr-10 md:m-0 md:leading-[2.5vw]" data-aos="fade-right" data-aos-duration="1500">
+          <p
+            class="mr-10 md:m-0 md:leading-[2.5vw]"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             I am a certified product designer with over 2
             <br class="hidden md:block" />
             years of experience in the design industry. I
@@ -130,7 +148,11 @@
             <br class="hidden md:block" />
             on user needs and pain points.
           </p>
-          <p class="ml-14 md:ml-[25vw] md:leading-[2.5vw]" data-aos="fade-right" data-aos-duration="1500">
+          <p
+            class="ml-14 md:ml-[25vw] md:leading-[2.5vw]"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             and I've always channeled the research
             <br class="hidden md:block" />
             towards creating a user friendly product. I
@@ -141,7 +163,11 @@
             <br class="hidden md:block" />
             the greater good of all users
           </p>
-          <p class="mr-16 md:mr-0 md:ml-[10vw] md:leading-[2.5vw]" data-aos="fade-right" data-aos-duration="1500">
+          <p
+            class="mr-16 md:mr-0 md:ml-[10vw] md:leading-[2.5vw]"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             My experience in the industry has <br class="hidden md:block" />
             made me understand how <br class="hidden md:block" />
             collaboration and teamwork can <br class="hidden md:block" />
@@ -200,6 +226,28 @@ export default {
       duration: 2,
       delay: 3,
     });
+
+    gsap.to(".clip", {
+      scrollTrigger: {
+        trigger: ".bottom",
+        start: "top 60%",
+        // markers: true
+        toggleActions: "play none none reset",
+        onEnter: () => {
+          gsap.to(".clip img", {
+            scale: 1,
+            duration: 1,
+            ease: "power3.out",
+            delay: 0.5,
+          });
+        },
+      },
+
+      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+      duration: 1.5,
+      ease: "power3.inOut",
+      // stagger: 0.2
+    });
   },
 };
 </script>
@@ -211,7 +259,7 @@ export default {
     @apply grid grid-cols-2 md:grid-cols-12 gap-y-7;
 
     > .bottom-mid {
-      @apply order-3 md:order-none col-span-8 pr-16 md:p-0 -mt-32 md:m-0;
+      @apply order-3 md:order-none col-span-8 pr-10 md:p-0 -mt-32 md:m-0;
 
       .about-text {
         @apply uppercase text-sm leading-loose md:text-[3.17vw] md:leading-[4.45vw] font-arial;
@@ -236,5 +284,9 @@ span > span > span {
 
 span {
   @apply inline-block;
+}
+
+.clip {
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
 }
 </style>
