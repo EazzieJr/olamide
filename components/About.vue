@@ -121,7 +121,7 @@
         <div
           class="motif-texts mt-7 md:text-[1.59vw] md:mt-[3.50vw] font-arial space-y-16 md:space-y-[5.3vw]"
         >
-          <p class="mr-10 md:m-0 md:leading-[2.5vw]">
+          <p class="mr-10 md:m-0 md:leading-[2.5vw]" data-aos="fade-right" data-aos-duration="1500">
             I am a certified product designer with over 2
             <br class="hidden md:block" />
             years of experience in the design industry. I
@@ -130,7 +130,7 @@
             <br class="hidden md:block" />
             on user needs and pain points.
           </p>
-          <p class="ml-14 md:ml-[25vw] md:leading-[2.5vw]">
+          <p class="ml-14 md:ml-[25vw] md:leading-[2.5vw]" data-aos="fade-right" data-aos-duration="1500">
             and I've always channeled the research
             <br class="hidden md:block" />
             towards creating a user friendly product. I
@@ -141,7 +141,7 @@
             <br class="hidden md:block" />
             the greater good of all users
           </p>
-          <p class="mr-16 md:mr-0 md:ml-[10vw] md:leading-[2.5vw]">
+          <p class="mr-16 md:mr-0 md:ml-[10vw] md:leading-[2.5vw]" data-aos="fade-right" data-aos-duration="1500">
             My experience in the industry has <br class="hidden md:block" />
             made me understand how <br class="hidden md:block" />
             collaboration and teamwork can <br class="hidden md:block" />

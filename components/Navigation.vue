@@ -4,7 +4,7 @@
       <div class="left-container hidden md:block">
         <ul class="navlinks start ">
           <a data-cursor="-pointer -exclusion" data-magnetic>
-            <div class="overflow-hidden lg:space-y-[1vw] h-4 lg:h-[1.1vw]">
+            <div class="overflow-hidden h-4 lg:h-[1.1vw]">
               <div class="swap">
                 <li>Be.</li>
                 <li>Be.</li>
@@ -13,7 +13,7 @@
           </a>
 
           <a data-cursor="-pointer -exclusion" data-magnetic>
-            <div class="overflow-hidden lg:space-y-[1vw] h-4 lg:h-[1.1vw]">
+            <div class="overflow-hidden h-4 lg:h-[1.1vw]">
               <div class="swap">
                 <li>Dr.</li>
                 <li>Dr.</li>
@@ -22,7 +22,7 @@
           </a>
 
           <a data-cursor="-pointer -exclusion" data-magnetic>
-            <div class="overflow-hidden lg:space-y-[1vw] h-4 lg:h-[1.1vw]">
+            <div class="overflow-hidden h-4 lg:h-[1.1vw]">
               <div class="swap">
                 <li>In.</li>
                 <li>In.</li>
@@ -31,7 +31,7 @@
           </a>
 
           <a data-cursor="-pointer -exclusion" data-magnetic>
-            <div class="overflow-hidden lg:space-y-[1vw] h-4 lg:h-[1.1vw]">
+            <div class="overflow-hidden h-4 lg:h-[1.1vw]">
               <div class="swap">
                 <li>Tw.</li>
                 <li>Tw.</li>
@@ -123,6 +123,10 @@ nav {
 
       ul {
         @apply space-x-5 lg:space-x-[1.9vw];
+
+        li {
+          @apply lg:leading-[1.19vw]
+        }
       }
     }
 
@@ -170,6 +174,6 @@ ul a > div > div  {
 }
 
 ul a:hover > div > div {
-  @apply -translate-y-[1vw] transition duration-300 ease-linear
+  @apply -translate-y-[1.2vw] transition duration-300 ease-linear
 }
 </style>
