@@ -99,10 +99,10 @@ export default {
         scrollTrigger: {
           trigger: ".list",
           start: "top 90%",
-          // toggleActions: "play none none reset",
+          toggleActions: "play none none reset",
         },
 
-        duration: 1.5,
+        duration: 1,
         y: 0,
         ease: "power3.out",
         stagger: 0.02,
@@ -112,21 +112,17 @@ export default {
 
   mounted() {
     this.initFooterAnimation();
-    // gsap.to(
-    //   ".behance a span, .twitter a span, .gmail a span, .instagram a span, .linkedin a span",
-    //   {
+    
+    // sectionPath.forEach((el) => {
+    //   gsap.to(`${el} h5`, {
     //     scrollTrigger: {
-    //       trigger: ".list",
+    //       trigger: el,
     //       start: "top 90%",
-    //       toggleActions: "play none none reset",
     //     },
-
-    //     duration: 1,
     //     y: 0,
-    //     ease: "power3.out",
-    //     stagger: 0.02,
-    //   }
-    // );
+    //     duration: 2,
+    //   });
+    // });
   },
 };
 </script>
@@ -163,11 +159,11 @@ a {
   @apply inline-block;
 }
 
-a {
+li a {
   @apply overflow-hidden;
 }
 
 a span {
-  @apply md:translate-y-[5vw];
+  @apply translate-y-[100%];
 }
 </style>

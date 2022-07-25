@@ -44,8 +44,6 @@ export default {
           // opacity: 0,
           ease: "power3.inOut",
         });
-
-        console.log("mouseover");
       });
 
       stuff.addEventListener("mouseleave", () => {

@@ -35,7 +35,7 @@ export default {
         width: "100%",
         duration: 2,
         ease: "power3.out",
-        delay: -1,
+        delay: -1.5,
     })
   },
 };

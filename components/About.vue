@@ -1,36 +1,14 @@
 <template>
   <section class="recent-works overflow-hidden">
     <div class="recent-works-container">
-      <SectionPath path="about" class="md:col-span-3" />
+      <SectionPath path="about" class="md:col-span-3 fade" />
 
-      <ScrollDown class="place-self-end md:self-start md:order-last" />
+      <ScrollDown class="place-self-end md:self-start md:order-last fade" />
 
       <div class="bottom-mid">
         <p class="about-text small opacity-0 translate-y-10 md:hidden">
-          <span class="hidden">
-            <span class="overflow-hidden">
-              <span>SELF-MOTIVATED</span>
-              <span>DESIGNER</span>
-              <span>WITH</span>
-              <span>WILD</span>
-            </span>
-            <span>
-              <span>INTEREST</span>
-              <span>IN</span>
-              <span>CREATING</span>
-              <span>SEAMLESS</span>
-            </span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-
-            DIGITAL EXPERIENCES.
-          </span>
+          self-motivated designer with wild interest in creating seamless
+          digital experiences.
           <br />
           <br />
           Not only do I believe users' pain points can be addressed by a
@@ -206,9 +184,21 @@ export default {
         },
       });
     },
+
+    fadeIn() {
+      gsap.to(".fade", {
+        opacity: 1,
+        duration: 1,
+        delay: 4
+      });
+
+      console.log("Function called");
+    },
   },
 
   mounted() {
+    this.fadeIn();
+
     // Run functions on different screens
     if (window.innerWidth >= 768 && window.innerWidth < 1025) {
       setTimeout(() => {
@@ -224,15 +214,15 @@ export default {
       opacity: 1,
       y: 0,
       duration: 2,
-      delay: 3,
+      delay: 4,
     });
 
     gsap.to(".clip", {
       scrollTrigger: {
         trigger: ".bottom",
-        start: "top 60%",
+        start: "top 80%",
         // markers: true
-        toggleActions: "play none none reset",
+        // toggleActions: "play none none reset",
         onEnter: () => {
           gsap.to(".clip img", {
             scale: 1,
@@ -288,5 +278,9 @@ span {
 
 .clip {
   clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+.fade {
+  opacity: 0;
 }
 </style>

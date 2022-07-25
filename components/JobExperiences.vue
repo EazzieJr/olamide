@@ -4,7 +4,7 @@
       <div class="jobs-divider place-self-end"></div>
     </div>
     <div class="job-experiences">
-      <SectionPath path="JOB EXPERIENCE" />
+      <SectionPath path="JOB EXPERIENCE" class="path" />
 
       <div class="bottom md:col-span-3">
         <div class="experiences">
@@ -45,6 +45,41 @@ export default {
       duration: 2,
       ease: "power3.out",
     });
+
+    // gsap.to(".path", {
+    //   scrollTrigger: {
+    //     trigger: ".path",
+    //     start: "top 90%",
+    //     onEnter: () => {
+    //       const text = document.querySelector("h5");
+    //       const str = text.textContent;
+    //       const splitText = str.split("");
+    //       text.textContent = "";
+
+    //       for (let i = 0; i < splitText.length; i++) {
+    //         const span = document.createElement("span");
+    //         span.textContent = splitText[i];
+    //         text.appendChild(span);
+
+    //       }
+    //     },
+    //   },
+    //   opacity: 0,
+    //   duration: 2,
+    //   ease: "power3.out",
+    // });
+
+        const text = document.querySelector("h5");
+    const str = text.textContent;
+    const splitText = str.split("");
+    text.textContent = "";
+
+    for (let i = 0; i < splitText.length; i++) {
+      const span = document.createElement("span");
+      span.textContent = splitText[i];
+      text.appendChild(span);
+      text.classList.add("hide")
+    }
   },
 };
 </script>
@@ -61,5 +96,9 @@ section {
       }
     }
   }
+}
+
+.hide {
+  @apply translate-y-[100%] hidden;
 }
 </style>
