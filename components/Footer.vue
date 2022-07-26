@@ -54,7 +54,7 @@
         </div>
       </div>
 
-      <div class="bottom md:between">
+      <div class="bottom md:between" data-aos="fade-in" data-aos-duratoin="2000" data-aos-offset="100">
         <p>A COLLABORATIVE PROCESS BETWEEN OZENUA AND CENTURY LEAP.</p>
 
         <p>OLAMIDE ADEYI. C {{ currentYear }}</p>

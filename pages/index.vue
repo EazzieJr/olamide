@@ -32,22 +32,26 @@ export default {
       stickDelta: 1,
     });
 
+
     const sectionPaths = document.querySelectorAll(".section-path");
-    // console.log(sectionPaths);
     sectionPaths.forEach((el) => {
-      gsap.to(el.firstChild, {
+      gsap.to(el.firstChild.childNodes, {
         scrollTrigger: {
           trigger: el,
           start: "top 90%",
           onEnter: () => {
-            console.log(el.textContent);
+            console.log(el.textContent, el.firstChild.childNodes);
           },
         },
 
         y: 0,
         duration: 1,
+        stagger: 0.02,
         ease: "power3.out",
+        // opacity: 1,
       })
+    console.log(el.firstChild.firstChild);
+
     })
 
 

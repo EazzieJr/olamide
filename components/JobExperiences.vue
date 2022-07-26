@@ -10,17 +10,14 @@
         <div class="experiences">
           <Experience at="ANTHONIA AND GRADE," year="2022" />
           <Experience at="CENTURY LEAP," year="2021 - 2022" />
-          <Experience at="THEONEOZENYA," year="2021 - 2022" />
+          <Experience at="THEONEOZENUA," year="2021 - 2022" />
           <Experience at="TIMESCAPE MEDIA." year="2019" />
         </div>
 
-        <div class="image">
+        <div class="job-experience-image j-clip overflow-hidden">
           <img
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            data-aos-delay="100"
-            class="w-full"
-            src="svg/e-card.svg"
+            class="w-full scale-[1.5]"
+            src="images/job-experience-image.png"
             alt="Job Experiences"
           />
         </div>
@@ -46,40 +43,27 @@ export default {
       ease: "power3.out",
     });
 
-    // gsap.to(".path", {
-    //   scrollTrigger: {
-    //     trigger: ".path",
-    //     start: "top 90%",
-    //     onEnter: () => {
-    //       const text = document.querySelector("h5");
-    //       const str = text.textContent;
-    //       const splitText = str.split("");
-    //       text.textContent = "";
+    gsap.to(".job-experience-image", {
+      scrollTrigger: {
+        trigger: ".job-experience-image",
+        start: "top 70%",
+        // markers: true,
+        // toggleActions: "play none none reset",
+        onEnter: () => {
+          gsap.to(".job-experience-image img", {
+            scale: 1,
+            duration: 1,
+            ease: "power3.out",
+            delay: 0.5,
+          });
+        },
+      },
 
-    //       for (let i = 0; i < splitText.length; i++) {
-    //         const span = document.createElement("span");
-    //         span.textContent = splitText[i];
-    //         text.appendChild(span);
-
-    //       }
-    //     },
-    //   },
-    //   opacity: 0,
-    //   duration: 2,
-    //   ease: "power3.out",
-    // });
-
-        const text = document.querySelector("h5");
-    const str = text.textContent;
-    const splitText = str.split("");
-    text.textContent = "";
-
-    for (let i = 0; i < splitText.length; i++) {
-      const span = document.createElement("span");
-      span.textContent = splitText[i];
-      text.appendChild(span);
-      text.classList.add("hide")
-    }
+      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+      duration: 1.5,
+      ease: "power3.inOut",
+      // stagger: 0.2
+    });
   },
 };
 </script>
@@ -98,7 +82,7 @@ section {
   }
 }
 
-.hide {
-  @apply translate-y-[100%] hidden;
+.j-clip {
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
 }
 </style>
