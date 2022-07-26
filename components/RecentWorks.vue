@@ -9,7 +9,7 @@
       </div>
 
       <div
-        class="bottom-left grid grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-[12.5vw] md:col-span-3 md:-mt-[1vw] md:pr-[5vw]"
+        class="bottom-left grid grid-cols-1 md:grid-cols-2 gap-y-14 md:gap-y-[12.5vw] md:col-span-3 md:-mt-[1vw] md:pr-[5vw]"
       >
         <Work title="United Bank of Africa Redesign Case study" href="146964529/Payme-Fintech-App" src="images/Uba.png" id="1" />
         <Work
@@ -21,7 +21,7 @@
         <Work
           title="Payme"
           small
-          class="md:-mt-[20vw]"
+          class="md:-mt-[15vw]"
           src="images/Pay-me.png"
           href="146964529/Payme-Fintech-App"
           id="3"
@@ -60,7 +60,7 @@ export default {
 <style lang="postcss" scoped>
 .recent-works {
   > .recent-works-container {
-    @apply grid grid-cols-1 md:grid-cols-4 gap-y-7 py-6 md:py-[6.62vw];
+    @apply grid grid-cols-1 md:grid-cols-4 gap-y-9 py-6 md:py-[6.62vw];
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="cont h-fit" data-cursor="-pointer -exclusion">
-    <a href="" class="block">
+    <a href="" class="block" :class="`a-${id}`">
       <span class="work block" :class="{ small }">
         <span class="image block" :class="`image-${id} overflow-hidden`">
           <img :class="`img-${id}`" :src="src" alt="" />
@@ -37,7 +37,7 @@ export default {
   },
 
   mounted() {
-    const stuff = document.querySelector(`.image-${this.id}`);
+    const stuff = document.querySelector(`.a-${this.id}`);
 
       stuff.addEventListener("mouseover", () => {
         gsap.to(`.image-${this.id} img`, {
@@ -80,7 +80,7 @@ export default {
 
 <style lang="postcss" scoped>
 .work {
-  @apply w-4/5 max-w-[300px] md:max-w-none md:w-[31.45vw] space-y-7 md:space-y-[2.64vw] overflow-hidden;
+  @apply min-w-[80%] max-w-[300px] md:max-w-none md:w-[31.45vw] space-y-7 md:space-y-[2.64vw] overflow-hidden;
 
   &.small .image {
     @apply h-64 md:h-[30.1vw];
