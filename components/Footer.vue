@@ -99,7 +99,7 @@ export default {
         scrollTrigger: {
           trigger: ".list",
           start: "top 90%",
-          toggleActions: "play none none reset",
+          // toggleActions: "play none none reset",
         },
 
         duration: 1,
@@ -112,17 +112,6 @@ export default {
 
   mounted() {
     this.initFooterAnimation();
-    
-    // sectionPath.forEach((el) => {
-    //   gsap.to(`${el} h5`, {
-    //     scrollTrigger: {
-    //       trigger: el,
-    //       start: "top 90%",
-    //     },
-    //     y: 0,
-    //     duration: 2,
-    //   });
-    // });
   },
 };
 </script>

@@ -3,6 +3,7 @@ $mf-color-text: #fff !default;
 
 .mf-cursor {
   $root: &;
+  @apply hidden lg:block;
 
   position: fixed;
   top: 0;
