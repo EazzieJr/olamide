@@ -1,5 +1,5 @@
 <template>
-  <a class="inline-start space-x-4 md:space-x-[1.3vw]">
+  <span class="inline-start space-x-4 md:space-x-[1.3vw]">
     <span class="uppercase font-lato text-[10px] md:text-[0.8vw] tracking-[0.13vw]">
       see case
     </span>
@@ -16,7 +16,7 @@
         stroke-width="2"
       />
     </svg>
-  </a>
+  </span>
 </template>
 
 <script>

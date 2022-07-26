@@ -1,20 +1,22 @@
 <template>
   <div class="cont h-fit" data-cursor="-pointer -exclusion">
-    <div class="work block" :class="{ small }">
-      <div class="image" :class="`image-${id} overflow-hidden`">
-        <img :class="`img-${id}`" :src="src" alt="" />
-      </div>
-
-      <div class="work-info">
-        <h3 data-aos="fade-up" data-aos-duration="2000">{{ title }}</h3>
-
-        <SeeCase
-          data-aos="fade-in"
-          data-aos-duration="2000"
-          data-aos-delay="400"
-        />
-      </div>
-    </div>
+    <a href="" class="block">
+      <span class="work block" :class="{ small }">
+        <span class="image block" :class="`image-${id} overflow-hidden`">
+          <img :class="`img-${id}`" :src="src" alt="" />
+        </span>
+  
+        <span class="work-info block">
+          <span class="h3 block" data-aos="fade-up" data-aos-duration="2000">{{ title }}</span>
+  
+          <SeeCase
+            data-aos="fade-in"
+            data-aos-duration="2000"
+            data-aos-delay="400"
+          />
+        </span>
+      </span>
+    </a>
   </div>
 </template>
 
@@ -108,5 +110,9 @@ export default {
   transform: scale(1) !important;
   transition: 500ms;
   transition-duration: transform 500ms !important;
+} */
+
+/* span {
+  display: block;
 } */
 </style>

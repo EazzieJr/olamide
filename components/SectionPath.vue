@@ -7,7 +7,7 @@
 <script>
 import { gsap } from "gsap/dist/gsap";
 export default {
-  props: ["path"],
+props: ["path"],
 
   methods: {
     init() {

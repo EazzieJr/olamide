@@ -54,7 +54,7 @@
         </div>
       </div>
 
-      <div class="bottom md:between" data-aos="fade-in" data-aos-duratoin="2000" data-aos-offset="100">
+      <div class="bottom md:between">
         <p>A COLLABORATIVE PROCESS BETWEEN OZENUA AND CENTURY LEAP.</p>
 
         <p>OLAMIDE ADEYI. C {{ currentYear }}</p>
@@ -92,6 +92,22 @@ export default {
       this.initLinkAnime(".gmail a span");
       this.initLinkAnime(".instagram a span");
       this.initLinkAnime(".linkedin a span");
+
+      gsap.fromTo(
+        ".bottom p",
+        {
+          opacity: 0,
+        },
+        {
+          scrollTrigger: {
+            trigger: ".bottom p",
+            start: "top 95%",
+            // markers: true,
+          },
+          opacity: 1,
+          duration: 1.5,
+        }
+      );
     },
 
     initLinkAnime(el) {
