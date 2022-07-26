@@ -73,7 +73,7 @@ export default {
 <style lang="postcss" scoped>
 .skillsets {
   > .skillsets-container {
-    @apply grid grid-cols-1 md:grid-cols-4 gap-y-7 py-6 md:py-[6.62vw];
+    @apply grid grid-cols-1 md:grid-cols-4 gap-y-9 py-6 md:py-[6.62vw];
   }
 }
 

@@ -71,7 +71,7 @@ export default {
 <style lang="postcss" scoped>
 section {
   > .job-experiences {
-    @apply grid grid-cols-1 md:grid-cols-4 pt-14 pb-28 md:pt-[6.62vw] md:pb-[13.24vw];
+    @apply grid grid-cols-1 gap-y-9 md:grid-cols-4 pt-14 pb-28 md:pt-[6.62vw] md:pb-[13.24vw];
 
     > .bottom {
       @apply space-y-8 md:space-y-[3.57vw] md:pr-[8.14vw];

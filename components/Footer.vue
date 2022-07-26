@@ -138,7 +138,7 @@ footer {
   > .footer-container {
     @apply divide-y-[0.5px] divide-black dark:divide-white pt-14 md:pt-[6.62vw];
     > .top {
-      @apply grid grid-cols-2 md:grid-cols-4 gap-y-7 pb-20 md:pb-[9.93vw];
+      @apply grid grid-cols-2 md:grid-cols-4 gap-y-9 pb-20 md:pb-[9.93vw];
 
       > .socials {
         @apply order-3 md:-order-none col-span-2;
