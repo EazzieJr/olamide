@@ -42,6 +42,7 @@ export default {
   buildModules: [
     '@nuxtjs/google-fonts',
     '@nuxt/postcss8',
+    '@nuxt/image',
   ],
 
   googleFonts: {

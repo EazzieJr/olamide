@@ -93,18 +93,22 @@
 
           <div class="bottom mt-4 md:mt-[1.6vw] w-full between">
             <div class="w-[49.9%] overflow-hidden clip">
-              <img
+              <nuxt-img
                 class="w-full scale-[1.5]"
                 src="images/Olamide-facing-down.png"
                 alt=""
+                loading="lazy"
+                placeholder
               />
             </div>
 
             <div class="w-[49.9%] overflow-hidden clip">
-              <img
+              <nuxt-img
                 class="w-full scale-[1.5]"
                 src="images/Olamide-looking-forward.png"
                 alt=""
+                loading="lazy"
+                placeholder
               />
             </div>
           </div>
