@@ -3,41 +3,14 @@
     <div class="nav-container between">
       <div class="left-container hidden md:block">
         <ul class="navlinks start ">
-          <a data-cursor="-pointer -exclusion" data-magnetic>
-            <div class="overflow-hidden h-4 lg:h-[1.1vw]">
-              <div class="swap">
-                <li>Be.</li>
-                <li>Be.</li>
-              </div>
-            </div>
-          </a>
-
-          <a data-cursor="-pointer -exclusion" data-magnetic>
-            <div class="overflow-hidden h-4 lg:h-[1.1vw]">
-              <div class="swap">
-                <li>Dr.</li>
-                <li>Dr.</li>
-              </div>
-            </div>
-          </a>
-
-          <a data-cursor="-pointer -exclusion" data-magnetic>
-            <div class="overflow-hidden h-4 lg:h-[1.1vw]">
-              <div class="swap">
-                <li>In.</li>
-                <li>In.</li>
-              </div>
-            </div>
-          </a>
-
-          <a data-cursor="-pointer -exclusion" data-magnetic>
-            <div class="overflow-hidden h-4 lg:h-[1.1vw]">
-              <div class="swap">
-                <li>Tw.</li>
-                <li>Tw.</li>
-              </div>
-            </div>
-          </a>
+          <li v-for="link in links" :key="link.id" data-cursor="-pointer -exclusion" data-magnetic>
+            <a :href="link.href" class="overflow-hidden h-4 lg:h-[1.1vw] block">
+              <span class="swap block">
+                <span class="block">{{ link.title }}</span>
+                <span class="block">{{ link.title }}</span>
+              </span>
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -48,7 +21,7 @@
       <div class="right-container start" data-cursor="-pointer -exclusion">
         <Timer />
 
-        <button class="theme" @click="toggleTheme">
+        <button class="theme" @click="toggleTheme" aria-label="Change Theme">
           <svg
           :class="darkMode ? 'invert' : ''"
             width="18"
@@ -81,6 +54,29 @@ import $ from "jquery";
 import Magnetic from "~/js/magnetic.js";
 import { mapState, mapMutations } from 'vuex'
 export default {
+  data() {
+    return {
+      links: [
+        {
+          title: "Be.",
+          href: "/"
+        },
+        {
+          title: "Dr.",
+          href: "/"
+        },
+        {
+          title: "In.",
+          href: "/"
+        },
+        {
+          title: "Tw.",
+          href: "/"
+        },
+      ]
+    }
+  },
+  
   methods: {
     ...mapMutations(["toggleDarkMode"]),
 
@@ -148,11 +144,11 @@ nav {
   src: url("~assets/fonts/GT-Haptik-Regular.woff2") format("woff2");
 }
 
-ul a {
+ul li {
   position: relative;
 }
 
-ul a::before {
+ul li::before {
   content: "";
   position: absolute;
   display: block;
@@ -169,11 +165,11 @@ ul a::before {
   /* transition: opacity 0.2s ease-in-out; */
 }
 
-ul a > div > div  {
+ul li > a > span  {
   @apply transition duration-300;
 }
 
-ul a:hover > div > div {
+ul li:hover > a > span {
   @apply -translate-y-[1.2vw] transition duration-300 ease-linear
 }
 </style>
