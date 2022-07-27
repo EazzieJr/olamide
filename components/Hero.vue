@@ -52,10 +52,6 @@ export default {
 
 section {
   perspective: 1000px;
-
-  img {
-    @apply w-[3.8vw];
-  }
 }
 
 h1 {
@@ -66,5 +62,9 @@ h1 {
 .perse {
   transform: translateZ(-20vw) rotateX(-90deg);
   opacity: 0;
+
+  img {
+    @apply w-[3.77vw] h-[3.77vw];
+  }
 }
 </style>
