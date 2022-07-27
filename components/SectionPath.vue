@@ -1,6 +1,6 @@
 <template>
   <div class="section-path h-fit">
-    <h5>/{{ path }}</h5>
+    <span>/{{ path }}</span>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ props: ["path"],
   methods: {
     init() {
       // Split text into span
-      const text = this.$el.querySelector("h5");
+      const text = this.$el.querySelector("span");
       const textArray = text.innerText.split("");
       text.innerHTML = "";
 
@@ -20,7 +20,7 @@ props: ["path"],
         const span = document.createElement("span");
         span.innerText = letter;
         text.appendChild(span);
-        gsap.to(".section-path h5 span", {
+        gsap.to(".section-path span span", {
           y: "100%",
           // opacity: 0,
           display: "inline-block"
@@ -36,7 +36,7 @@ props: ["path"],
 </script>
 
 <style lang="postcss" scoped>
-h5 {
+span {
   @apply font-arial text-sm lg:text-[1.6vw] uppercase md:leading-[1.85vw] overflow-hidden whitespace-pre;
 }
 
