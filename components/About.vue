@@ -120,7 +120,7 @@
 
         <div class="motif-texts">
           <p class="mr-10 md:m-0" data-magnetic>
-            <span data-aos="fade-in" data-aos-duration="1500">
+            <span data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
               I am a certified product designer with over 2
               <br class="hidden md:block" />
               years of experience in the design industry. I
@@ -131,7 +131,7 @@
             </span>
           </p>
           <p class="ml-14 md:ml-[25vw]" data-magnetic>
-            <span data-aos="fade-in" data-aos-duration="1500">
+            <span data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
               and I've always channeled the research
               <br class="hidden md:block" />
               towards creating a user friendly product. I
@@ -145,7 +145,7 @@
           </p>
 
           <p class="mr-16 md:mr-0 md:ml-[10vw]" data-magnetic>
-            <span data-aos="fade-in" data-aos-duration="1500">
+            <span data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
               My experience in the industry has <br class="hidden md:block" />
               made me understand how <br class="hidden md:block" />
               collaboration and teamwork can <br class="hidden md:block" />
