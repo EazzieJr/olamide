@@ -15,10 +15,13 @@
         </div>
 
         <div class="job-experience-image j-clip overflow-hidden">
-          <img
+          <nuxt-img
             class="w-full scale-[1.5]"
-            src="images/job-experience-image.png"
+            provider="cloudinary"
+            src="job-experience-image_anjnpl.png"
             alt="Job Experiences"
+            quality="70"
+            loading="lazy" format="webp" placeholder="[100, 50, 10]"
           />
         </div>
       </div>
