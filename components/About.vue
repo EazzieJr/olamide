@@ -99,6 +99,7 @@
                 alt=""
                 loading="lazy"
                 placeholder
+                format="webp"
               />
             </div>
 
@@ -109,6 +110,7 @@
                 alt=""
                 loading="lazy"
                 placeholder
+                format="webp"
               />
             </div>
           </div>

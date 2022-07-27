@@ -3,7 +3,7 @@
     <a href="" class="block" :class="`a-${id}`">
       <span class="work block" :class="{ small }">
         <span class="image block" :class="`image-${id} overflow-hidden`">
-          <nuxt-img :class="`img-${id}`" :src="src" alt="" loading="lazy" />
+          <nuxt-img :class="`img-${id}`" :src="src" alt="" loading="lazy" format="webp" />
         </span>
   
         <span class="work-info block">
