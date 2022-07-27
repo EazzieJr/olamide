@@ -95,7 +95,8 @@
             <div class="w-[49.9%] overflow-hidden clip">
               <nuxt-img
                 class="w-full scale-[1.5]"
-                src="images/Olamide-facing-down.png"
+                provider="cloudinary"
+                src="Olamide-facing-down_rpxpq5.png"
                 alt=""
                 loading="lazy"
                 placeholder
@@ -106,7 +107,8 @@
             <div class="w-[49.9%] overflow-hidden clip">
               <nuxt-img
                 class="w-full scale-[1.5]"
-                src="images/Olamide-looking-forward.png"
+                provider="cloudinary"
+                src="Olamide-looking-forward_xquvag.png"
                 alt=""
                 loading="lazy"
                 placeholder

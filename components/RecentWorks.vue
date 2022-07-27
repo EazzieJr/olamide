@@ -11,10 +11,10 @@
       <div
         class="bottom-left grid grid-cols-1 md:grid-cols-2 gap-y-14 md:gap-y-[12.5vw] md:col-span-3 md:-mt-[1vw] md:pr-[5vw]"
       >
-        <Work title="United Bank of Africa Redesign Case study" href="146964529/Payme-Fintech-App" src="images/Uba.png" id="1" />
+        <Work title="United Bank of Africa Redesign Case study" href="146964529/Payme-Fintech-App" src="Uba_r2kahf.png" id="1" />
         <Work
           title="LearnHere"
-          :src="darkMode ? 'images/Learn-here-dark.png' : 'images/Learn-here-light.png'"
+          :src="darkMode ? 'Learn-here-dark_wxajjj.png' : 'Learn-here-light_kmsafz.png'"
           class="place-self-end md:mt-[20vw]"
           id="2"
         />
@@ -22,11 +22,11 @@
           title="Payme"
           small
           class="md:-mt-[15vw]"
-          src="images/Pay-me.png"
+          src="Pay-me_mfxyrn.png"
           href="146964529/Payme-Fintech-App"
           id="3"
         />
-        <Work title="Msoft Design Agency" href="145509807/Design-agency-Website" class="place-self-end" src="images/Msoft.png" />
+        <Work title="Msoft Design Agency" href="145509807/Design-agency-Website" class="place-self-end" src="Msoft_upqmct.png" />
       </div>
     </div>
   </section>

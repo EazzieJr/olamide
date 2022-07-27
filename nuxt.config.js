@@ -57,6 +57,12 @@ export default {
   modules: [
   ],
 
+  image: {
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/eazzie/image/upload/Olamide/'
+    }
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: {
