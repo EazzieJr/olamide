@@ -1,6 +1,6 @@
 <template>
   <div class="cont h-fit" data-cursor="-pointer -exclusion">
-    <a href="" class="block" :class="`a-${id}`">
+    <a :href="`https://www.behance.net/gallery/${href}`" class="block" :class="`a-${id}`" target="blank">
       <span class="work block" :class="{ small }">
         <span class="image block" :class="`image-${id} overflow-hidden`">
           <nuxt-img provider="cloudinary" quality="70" :class="`img-${id}`" :src="src" alt="" loading="lazy" format="webp" placeholder="[100, 50, 10]" />
@@ -34,6 +34,7 @@ export default {
     src: String,
     href: String,
     id: String,
+    linkTo: String,
   },
 
   mounted() {
