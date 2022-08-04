@@ -4,7 +4,7 @@
       <div class="left-container hidden md:block">
         <ul class="navlinks start ">
           <li v-for="link in links" :key="link.id" data-cursor="-pointer -exclusion" data-magnetic>
-            <a :href="link.href" class="overflow-hidden h-4 lg:h-[1.1vw] block">
+            <a :href="link.href" class="overflow-hidden h-4 lg:h-[1.1vw] block" target="blank">
               <span class="swap block">
                 <span class="block">{{ link.title }}</span>
                 <span class="block">{{ link.title }}</span>
@@ -59,19 +59,19 @@ export default {
       links: [
         {
           title: "Be.",
-          href: "/"
+          href: "https://www.behance.net/legacygraphiczs"
         },
         {
           title: "Dr.",
-          href: "/"
+          href: "https://dribbble.com/legacygraphiczs"
         },
         {
           title: "In.",
-          href: "/"
+          href: "https://www.instagram.com/legacygraphiczs/"
         },
         {
           title: "Tw.",
-          href: "/"
+          href: "https://twitter.com/Legacy_U_I"
         },
       ]
     }
@@ -157,12 +157,6 @@ ul li::before {
   right: -1vw;
   bottom: -1vw;
   z-index: -1;
-  /* width: 100%;
-  height: 100%; */
-  /* background: red; */
-  /* transform: translate(-50%, -50%); */
-  /* opacity: 0; */
-  /* transition: opacity 0.2s ease-in-out; */
 }
 
 ul li > a > span  {

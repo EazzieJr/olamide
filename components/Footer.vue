@@ -10,32 +10,32 @@
         <div class="socials">
           <ul class="list uppercase" data-cursor="-exclusion">
             <li class="h3 behance">
-              <a href="/">
+              <a href="https://www.behance.net/legacygraphiczs" target="blank">
                 <span>b</span><span>e</span><span>h</span><span>a</span
                 ><span>n</span><span>c</span><span>e</span><span>,</span>
               </a>
             </li>
             <li class="h3 twitter">
-              <a href="/">
+              <a href="https://twitter.com/Legacy_U_I" target="blank">
                 <span>t</span><span>w</span><span>i</span><span>t</span
                 ><span>t</span><span>e</span><span>r</span><span>,</span>
               </a>
             </li>
             <li class="h3 gmail">
-              <a href="/">
+              <a href="mailto:adeyilegacy@gmail.com">
                 <span>g</span><span>m</span><span>a</span><span>i</span
                 ><span>l</span><span>,</span>
               </a>
             </li>
             <li class="h3 instagram">
-              <a href="/">
+              <a href="https://www.instagram.com/legacygraphiczs/" target="blank">
                 <span>i</span><span>n</span><span>s</span><span>t</span
                 ><span>a</span><span>g</span><span>r</span><span>a</span
                 ><span>m</span><span>,</span>
               </a>
             </li>
             <li class="h3 linkedin">
-              <a href="/">
+              <a href="https://www.linkedin.com/in/olamide-adeyi-83a822233" target="blank">
                 <span>l</span><span>i</span><span>n</span><span>k</span
                 ><span>e</span><span>d</span><span>i</span><span>n</span
                 ><span>.</span>
