@@ -53,15 +53,14 @@
   }
 
   @font-face {
-    font-family: "Monglan";
-    font-style: normal;
+    font-family: Moglan;
     font-weight: 400;
     font-display: swap;
-    src: url("~/assets/fonts/Moglan Ttf.ttf") format("ttf");
+    src: url("/fonts/Moglan Otf.otf");
   }
 
   h1 {
-    @apply text-[11vw] md:text-[12vw] uppercase text-center leading-relaxed xl:leading-[18.7vw];
+    @apply text-[13vw] xl:text-[14.04vw] uppercase text-center leading-relaxed xl:leading-[18.7vw];
   }
 
   h3, .h3 {

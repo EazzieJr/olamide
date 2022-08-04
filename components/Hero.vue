@@ -42,13 +42,20 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-@font-face {
+/* @font-face {
   font-family: "Moglan";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("~/assets/fonts/Moglan Ttf") format("ttf");
-}
+  src: url("fonts/Moglan.ttf");
+} */
+
+  /* @font-face {
+    font-family: "Moglan";
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/Moglan Ttf.ttf");
+  } */
 
 section {
   perspective: 1000px;
