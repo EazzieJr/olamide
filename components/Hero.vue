@@ -43,11 +43,11 @@ export default {
 
 <style lang="postcss" scoped>
 @font-face {
-  font-family: "MoglanDemo";
+  font-family: "Moglan";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("~assets/fonts/MoglanDemo.ttf") format("ttf");
+  src: url("~/assets/fonts/Moglan Ttf") format("ttf");
 }
 
 section {
@@ -55,7 +55,8 @@ section {
 }
 
 h1 {
-  font-family: "MoglanDemo", sans-serif;
+  @apply font-moglan;
+  /* font-family: "MoglanDemo", sans-serif; */
   /* transform: translate3d(0px, 0px, -200px); */
 }
 

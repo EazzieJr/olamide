@@ -78,6 +78,6 @@ export default {
 }
 
 p {
-  @apply block text-5xl md:text-[6.35vw] font-moglandemo leading-normal md:leading-[8.47vw];
+  @apply block text-5xl md:text-[6.35vw] font-moglan leading-normal md:leading-[8.47vw];
 }
 </style>
