@@ -1,6 +1,6 @@
 <template>
-  <div class="section-path h-fit">
-    <span>/{{ path }}</span>
+  <div class="section-path min-h-fit overflow-hidden">
+    <span class="overflow-hidden">/{{ path }}</span>
   </div>
 </template>
 
