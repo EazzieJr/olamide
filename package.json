@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/robots": "^2.5.0",
     "aos": "^2.3.4",
     "core-js": "^3.19.3",
     "gsap": "^3.10.4",
