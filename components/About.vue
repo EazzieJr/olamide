@@ -174,6 +174,7 @@ export default {
           start: "top 85%",
           // markers: true
           // toggleActions: "play none none reset",
+          pinType: "transform",
         },
 
         duration: 1.5,

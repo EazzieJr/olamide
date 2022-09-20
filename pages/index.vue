@@ -17,9 +17,9 @@
 </template>
 
 <script>
-import SmoothScrollbar from "smooth-scrollbar";
-import ScrollTriggerPlugin from "~/js/vendor/smooth-scrollbar/ScrollTriggerPlugin";
-import SoftScrollPlugin from "~/js/vendor/smooth-scrollbar/SoftScrollPlugin";
+// import SmoothScrollbar from "smooth-scrollbar";
+// import ScrollTriggerPlugin from "~/js/vendor/smooth-scrollbar/ScrollTriggerPlugin";
+// import SoftScrollPlugin from "~/js/vendor/smooth-scrollbar/SoftScrollPlugin";
 import MouseFollower from "mouse-follower";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -36,7 +36,7 @@ export default {
       SmoothScrollbar.init(view, {
         renderByPixels: true,
         damping: 0.065,
-        alwaysShowTracks: true,
+        // alwaysShowTracks: true,
       });
     },
   },
@@ -53,6 +53,8 @@ export default {
         scrollTrigger: {
           trigger: el,
           start: "top 90%",
+          pinType: "transform",
+          markers: true,
 
           // onEnter: () => {
           // },
@@ -67,19 +69,22 @@ export default {
     })
 
     // Init Scrollbar
-    this.initScrollbar();
-    // const view = document.querySelector("#index");
-
-    // SmoothScrollbar.init(view, {
-    //   renderByPixels: true,
-    //   damping: 0.065,
-    //   alwaysShowTracks: true,
-    // });
+    // this.initScrollbar();
   },
 };
 </script>
 
 <style>
+/* html {
+  height: 100%;
+  display: none;
+} */
+
+#index {
+  width: 100%;
+  height: 100%;
+}
+  
 .hap {
   font-family: "GT Haptik Regular";
 }
