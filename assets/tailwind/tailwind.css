@@ -60,7 +60,7 @@
   }
 
   h1 {
-    @apply text-[13vw] xl:text-[14.04vw] uppercase text-center leading-relaxed xl:leading-[18.7vw];
+    @apply text-[13vw] xl:text-[13.5vw] uppercase text-center leading-relaxed xl:leading-[18.7vw];
   }
 
   h3, .h3 {
