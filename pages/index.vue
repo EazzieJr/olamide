@@ -1,22 +1,25 @@
 <template>
   <div class="px-5 lg:px-[1.6vw]">
-    <Navigation />
-
-    <Hero />
-
-    <About />
-
-    <Skillsets />
-
-    <RecentWorks />
-
-    <JobExperiences />
-
-    <Footer />
+    <div data-scroll-container>
+      <Navigation />
+  
+      <Hero />
+  
+      <About />
+  
+      <Skillsets />
+  
+      <RecentWorks />
+  
+      <JobExperiences />
+  
+      <Footer />
+    </div>
   </div>
 </template>
 
 <script>
+// import LocomotiveScroll from "locomotive-scroll";
 import MouseFollower from "mouse-follower";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -25,6 +28,41 @@ MouseFollower.registerGSAP(gsap);
 
 export default {
   name: "IndexPage",
+  data() {
+    return {
+      scroll: null,
+    };
+  },
+  
+  methods: {
+    initScroller() {
+      this.scroll = new this.locomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+      });
+
+      this.scroll.on("scroll", ScrollTrigger.update);
+
+      ScrollTrigger.scrollerProxy("[data-scroll-container]", {
+        scrollTop(value) {
+          return arguments.length
+            ? this.scroll.scrollTo(value, 0, 0)
+            : this.scroll.scroll.instance.scroll.y;
+        },
+        getBoundingClientRect() {
+          return {
+            top: 0,
+            left: 0,
+            width: window.innerWidth,
+            height: window.innerHeight,
+          };
+        },
+        pinType: document.querySelector("[data-scroll-container]").style.transform
+          ? "transform"
+          : "fixed",
+      });
+    }
+  },
 
   mounted() {
     const cursor = new MouseFollower({
@@ -38,6 +76,7 @@ export default {
         scrollTrigger: {
           trigger: el,
           start: "top 90%",
+          scroller: "[data-scroll-container]",
           // onEnter: () => {
           // },
         },
@@ -49,6 +88,8 @@ export default {
         // opacity: 1,
       })
     })
+
+    this.initScroller();
   },
 };
 </script>

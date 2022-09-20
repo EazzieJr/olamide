@@ -173,8 +173,8 @@ export default {
           trigger: trigger,
           start: "top 85%",
           // markers: true
-          // toggleActions: "play none none reset",
-          pinType: "transform",
+          scroller: "[data-scroll-container]",
+          // pinType: "transform",
         },
 
         duration: 1.5,
@@ -221,6 +221,7 @@ export default {
       scrollTrigger: {
         trigger: ".bottom",
         start: "top 80%",
+        // scroller: "[data-scroll-container]",
         // markers: true
         // toggleActions: "play none none reset",
         onEnter: () => {
