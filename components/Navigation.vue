@@ -23,7 +23,7 @@
 
         <button class="theme" @click="toggleTheme" aria-label="Change Theme">
           <svg
-          :class="darkMode ? 'invert' : ''"
+          :class="darkMode ? 'invert-theme' : ''"
             width="18"
             height="18"
             viewBox="0 0 18 18"
@@ -165,5 +165,9 @@ ul li > a > span  {
 
 ul li:hover > a > span {
   @apply -translate-y-[1.2vw] transition duration-300 ease-linear
+}
+
+.invert-theme {
+  filter: invert(100%);
 }
 </style>
