@@ -54,7 +54,7 @@ export default {
           trigger: el,
           start: "top 90%",
           pinType: "transform",
-          markers: true,
+          // markers: true,
 
           // onEnter: () => {
           // },
