@@ -221,7 +221,7 @@ export default {
       scrollTrigger: {
         trigger: ".bottom",
         start: "top 80%",
-        // scroller: "[data-scroll-container]",
+        scroller: "[data-scroll-container]",
         // markers: true
         // toggleActions: "play none none reset",
         onEnter: () => {

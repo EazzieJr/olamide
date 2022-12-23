@@ -1,25 +1,28 @@
 <template>
   <div class="px-5 lg:px-[1.6vw]">
-    <div data-scroll-container>
+    <div data-scroll-container  class="js-scroller">
       <Navigation />
   
-      <Hero />
+      <Hero class="js-virtual-block" />
   
-      <About />
+      <About class="js-virtual-block" />
   
-      <Skillsets />
+      <Skillsets class="js-virtual-block" />
   
-      <RecentWorks />
+      <RecentWorks class="js-virtual-block" />
   
-      <JobExperiences />
+      <JobExperiences class="js-virtual-block" />
   
-      <Footer />
+      <Footer class="js-virtual-block" />
     </div>
   </div>
 </template>
 
 <script>
 // import LocomotiveScroll from "locomotive-scroll";
+// import Scroller from "../js/scroller";
+
+// import "../js/scroller";
 import MouseFollower from "mouse-follower";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -61,6 +64,13 @@ export default {
           ? "transform"
           : "fixed",
       });
+
+
+      // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+      ScrollTrigger.addEventListener("refresh", () => this.scroll.update());
+
+      // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+      ScrollTrigger.refresh();
     }
   },
 
@@ -89,12 +99,19 @@ export default {
       })
     })
 
+    console.log(this.locomotiveScroll)
+
     this.initScroller();
   },
 };
 </script>
 
 <style>
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+  
 .hap {
   font-family: "GT Haptik Regular";
 }
