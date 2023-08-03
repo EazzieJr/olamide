@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@nuxtjs/robots": "^2.5.0",
+    "@studio-freight/lenis": "^1.0.16",
     "aos": "^2.3.4",
     "core-js": "^3.19.3",
     "events": "^3.3.0",

@@ -160,8 +160,6 @@
 
 <script>
 import { gsap } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 import aosMixin from "~/mixins/aos";
 export default {
   mixins: [aosMixin],
@@ -173,7 +171,6 @@ export default {
           trigger: trigger,
           start: "top 85%",
           // markers: true
-          scroller: "[data-scroll-container]",
           // pinType: "transform",
         },
 
@@ -200,15 +197,15 @@ export default {
     this.fadeIn();
 
     // Run functions on different screens
-    if (window.innerWidth >= 768 && window.innerWidth < 1025) {
-      setTimeout(() => {
-        this.animateLine(".al-one span", ".al-one");
-        this.animateLine(".al-two span", ".al-two");
-      }, 4000);
-    } else if (window.innerWidth > 1025) {
-      this.animateLine(".al-one span", ".al-one");
-      this.animateLine(".al-two span", ".al-two");
-    }
+    // if (window.innerWidth >= 768 && window.innerWidth < 1025) {
+    //   setTimeout(() => {
+    //     this.animateLine(".al-one span", ".al-one");
+    //     this.animateLine(".al-two span", ".al-two");
+    //   }, 4000);
+    // } else if (window.innerWidth > 1025) {
+    //   this.animateLine(".al-one span", ".al-one");
+    //   this.animateLine(".al-two span", ".al-two");
+    // }
 
     gsap.to(".small", {
       opacity: 1,
@@ -221,7 +218,6 @@ export default {
       scrollTrigger: {
         trigger: ".bottom",
         start: "top 80%",
-        scroller: "[data-scroll-container]",
         // markers: true
         // toggleActions: "play none none reset",
         onEnter: () => {

@@ -1,28 +1,24 @@
 <template>
   <div class="px-5 lg:px-[1.6vw]">
-    <div data-scroll-container  class="js-scroller">
+    <div>
       <Navigation />
   
-      <Hero class="js-virtual-block" />
+      <Hero />
   
-      <About class="js-virtual-block" />
+      <About />
   
-      <Skillsets class="js-virtual-block" />
+      <Skillsets />
   
-      <RecentWorks class="js-virtual-block" />
+      <RecentWorks />
   
-      <JobExperiences class="js-virtual-block" />
+      <JobExperiences />
   
-      <Footer class="js-virtual-block" />
+      <Footer />
     </div>
   </div>
 </template>
 
 <script>
-// import LocomotiveScroll from "locomotive-scroll";
-// import Scroller from "../js/scroller";
-
-// import "../js/scroller";
 import MouseFollower from "mouse-follower";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -38,40 +34,7 @@ export default {
   },
   
   methods: {
-    initScroller() {
-      this.scroll = new this.locomotiveScroll({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
-      });
 
-      this.scroll.on("scroll", ScrollTrigger.update);
-
-      ScrollTrigger.scrollerProxy("[data-scroll-container]", {
-        scrollTop(value) {
-          return arguments.length
-            ? this.scroll.scrollTo(value, 0, 0)
-            : this.scroll.scroll.instance.scroll.y;
-        },
-        getBoundingClientRect() {
-          return {
-            top: 0,
-            left: 0,
-            width: window.innerWidth,
-            height: window.innerHeight,
-          };
-        },
-        pinType: document.querySelector("[data-scroll-container]").style.transform
-          ? "transform"
-          : "fixed",
-      });
-
-
-      // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
-      ScrollTrigger.addEventListener("refresh", () => this.scroll.update());
-
-      // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
-      ScrollTrigger.refresh();
-    }
   },
 
   mounted() {
@@ -86,7 +49,6 @@ export default {
         scrollTrigger: {
           trigger: el,
           start: "top 90%",
-          scroller: "[data-scroll-container]",
           // onEnter: () => {
           // },
         },
@@ -99,9 +61,9 @@ export default {
       })
     })
 
-    console.log(this.locomotiveScroll)
+    // console.log(this.locomotiveScroll)
 
-    this.initScroller();
+    // this.initScroller();
   },
 };
 </script>
@@ -109,7 +71,7 @@ export default {
 <style>
 html, body {
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
   
 .hap {
