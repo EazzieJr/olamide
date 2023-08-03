@@ -46,12 +46,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    {
-      src: "~/plugins/client.js",
-      mode: "client"
-    }
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -60,7 +55,6 @@ export default {
   buildModules: [
     '@nuxtjs/google-fonts',
     '@nuxt/postcss8',
-    '@nuxt/image',
   ],
 
   googleFonts: {
@@ -79,12 +73,6 @@ export default {
   robots: {
     UserAgent: '*',
     Disallow: ''
-  },
-
-  image: {
-    cloudinary: {
-      baseURL: 'https://res.cloudinary.com/eazzie/image/upload/Olamide/'
-    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
