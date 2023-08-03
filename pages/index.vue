@@ -22,6 +22,8 @@
 import MouseFollower from "mouse-follower";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Lenis from '@studio-freight/lenis'
+
 gsap.registerPlugin(ScrollTrigger);
 MouseFollower.registerGSAP(gsap);
 
@@ -34,10 +36,25 @@ export default {
   },
   
   methods: {
+    initScroller() {
+      const lenis = new Lenis({duration: 2})
 
+      lenis.on('scroll', (e) => {
+        // console.log(e)
+      })
+
+      function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+      }
+
+      requestAnimationFrame(raf)
+    }
   },
 
   mounted() {
+    this.initScroller()
+    
     const cursor = new MouseFollower({
       skewing: 3,
       stickDelta: 1,

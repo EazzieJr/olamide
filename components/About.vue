@@ -93,27 +93,17 @@
 
           <div class="bottom mt-4 md:mt-[1.6vw] w-full between">
             <div class="w-[49.9%] overflow-hidden clip">
-              <nuxt-img
+              <img
                 class="w-full scale-[1.5]"
-                provider="cloudinary"
-                src="Olamide-facing-down_rpxpq5.png"
-                alt=""
-                loading="lazy"
-                placeholder
-                format="webp"
+                src="/images/Olamide-facing-down.webp"
               />
             </div>
 
             <div class="w-[49.9%] overflow-hidden clip">
-              <nuxt-img
-                class="w-full scale-[1.5]"
-                provider="cloudinary"
-                src="Olamide-looking-forward_xquvag.png"
-                alt=""
-                loading="lazy"
-                placeholder
-                format="webp"
-              />
+              <img
+                  class="w-full scale-[1.5]"
+                  src="/images/Olamide-looking-forward.webp"
+                />
             </div>
           </div>
         </div>

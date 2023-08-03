@@ -6,10 +6,6 @@
   * {
     @apply transition-colors duration-100 cursor-none;
   }
-  
-  html {
-    scroll-behavior: smooth;
-  }
 
   body {
     @apply bg-[#FAFAFA] dark:bg-black text-black dark:text-white;
