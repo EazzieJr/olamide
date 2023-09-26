@@ -14,6 +14,8 @@
       <JobExperiences />
   
       <Footer />
+
+      <HonorableMention />
     </div>
   </div>
 </template>
