@@ -22,16 +22,16 @@ export default {
 
       { hid: 'og:type', name: 'og:type', content: 'website' },
       { hid: 'og:title', name: 'og:title', content: 'OLAMIDE ADEYI | Product Designer' },
-      { hid: 'og:url', name: 'og:url', content: "https://olamideadeyi.com" },
+      { hid: 'og:url', name: 'og:url', content: "https://olamide-folio.netlify.app" },
       { hid: 'og:site_name', name: 'og:site_name', content: "OLAMIDE ADEYI | Product Designer" },
-      { hid: 'og:image', name: 'og:image', content: "https://res.cloudinary.com/eazzie/image/upload/f_webp,q_auto/Olamide/Olamide-facing-down_rpxpq5.png" },
+      { hid: 'og:image', name: 'og:image', content: "/images/hero.png" },
       { hid: 'og:description', name: 'og:description', content: "OLAMIDE is a certified Product Designer with over 2 years of experience in the design Industry. He has expertise and experience in UI/UX Designing." },
 
       { hid: 'twitter:site', name: 'twitter:site', content: "@Legacy_U_I" },
       { hid: 'twitter:title', name: 'twitter:title', content: 'Adeyi Olamide' },
       { hid: 'twitter:card', name: 'twitter:card', content: "summary_large_image" },
       { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: "An image of the Olamide" },
-      { hid: 'twitter:image', name: 'twitter:image', content: "https://res.cloudinary.com/eazzie/image/upload/f_webp,q_auto/Olamide/Olamide-facing-down_rpxpq5.png" },
+      { hid: 'twitter:image', name: 'twitter:image', content: "/images/hero.png" },
       { hid: 'twitter:description', name: 'twitter:description', content: "OLAMIDE is a certified Product Designer with over 2 years of experience in the design Industry. He has expertise and experience in UI/UX Designing." },
     ],
     link: [
